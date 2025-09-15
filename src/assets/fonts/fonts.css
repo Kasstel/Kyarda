@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Luxemburg';
+  src: url(./luxembourg-1910.woff) format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Angst-bold';
+  src: url(./Angst-Bold.woff) format('woff');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Angst-normal';
+  src: url(./Angst-Normal.woff) format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Angst-thin';
+  src: url(./Angst-Thin.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gloria';
+  src: url(./gloriascript.ttf) format('ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Passions';
+  src: url(./PassionsConflictRUS-Regular.otf) format('opentype');
+  font-display: swap;
+}

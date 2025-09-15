@@ -1,0 +1,14 @@
+:root{
+  --bg-forest: url(../../public/images/header-forest.png);
+  --bold-f: Angst-bold;
+  --thin-f: Angst-thin;
+  --normal-f: Angst-normal;
+  --padding-inline: 120px;
+  --padding-block: 100px; 
+  --font-size: clamp();
+  --text-size: 20px;
+  --title-size: 50px;
+  --main-title-color:#253935;
+  --bg-color: #142927;
+  --text-color: #dfe2dc;
+}
