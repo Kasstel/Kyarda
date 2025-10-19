@@ -102,19 +102,20 @@
 .hero-section__logo-forest{
   background-image: url(../../public/images/header-forest.png);
   height: 100vh;
+  margin-top: 50px;
   z-index: 2;
   transform: translate3d(0, calc(var(--scrollTop, 0px) * 0.4), 0);
 }
 
 .hero-section__text-block{
   align-content: center;
-  font-size: 250px;
+  font-size: clamp(5rem, 1.25rem + 18.75vw, 18.125rem);
   color: var(--main-title-color);
   font-family: Angst-normal;
   z-index: 1;
   display: flex;
   justify-content: center;
-  margin-top: 0;
+  align-items: center;
 }
 
 .grid-section{
@@ -124,7 +125,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-top: 140px;
+  margin-top: 130px;
 }
 
 .about{
@@ -139,22 +140,19 @@
 
 .about__info-block {
   display: grid;
-  padding: 3rem;
-  grid-template-columns: repeat(minmax(250px, 100%), min-content);
-  gap: 2rem;
-  margin-bottom: 3rem
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 3rem;
+  gap: 20px;
 }
 
 .about__info-card {
   background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
+  width: 100%;
+  padding: 1rem;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 @media (width<=768px) {
@@ -200,7 +198,6 @@
 
 
 .about__title-block{
-  
   grid-column: 1/3;
 }
 
@@ -214,13 +211,9 @@
 }
 
 .avatarka{
-  background-image: url(../public/images/avatarka.jpg);
-  width: 100%;
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
+  max-width: 400px;
+  min-height: 200px;
   justify-self: center;
-  padding: 1rem;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -248,7 +241,6 @@
 
 .mission{
   padding-inline: var(--padding-inline);
-  min-height: 100vh;
   background-color: var(--bg-color);
 }
 
@@ -299,8 +291,10 @@
   padding-bottom: 30px;
 }
 
-.experience__block{
-  padding: 80px 0 110px;
+.experience__section{
+  background-color: var(--bg-color);
+  padding-block: 80px 110px;
+  padding-inline: var(--padding-inline);
   display: grid;
   gap: 25px;
 }
@@ -409,6 +403,4 @@
   opacity: 1;
 }
 
-.way{
-}
 

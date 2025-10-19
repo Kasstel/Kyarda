@@ -1,9 +1,9 @@
-import gsap from "gsap";
+import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/all";
 import { useEffect } from "react";
-import "../App.css"
-import "../assets/fonts/fonts.css";
+import "../../App.css"
+import "../../assets/fonts/fonts.css";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
