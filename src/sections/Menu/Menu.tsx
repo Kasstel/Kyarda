@@ -5,7 +5,8 @@ export default function Menu() {
   return (
     <>
       <img src={logo} className="menu__logo" alt="Логотип" />
-      <nav className="menu section-width">
+      <div className="menu-layer">
+        <nav className="menu section-width">
         <ul className="nav-list">
           <li className="nav-item">
             <a href="#about" className="text-link">
@@ -29,6 +30,7 @@ export default function Menu() {
           </li>
         </ul>
       </nav>
+      </div>
     </>
   );
 }

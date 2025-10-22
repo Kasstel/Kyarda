@@ -10,6 +10,7 @@ import Header from './sections/Header/Header.tsx';
 import Experience from './sections/Experience/Experience.tsx';
 import Menu from './sections/Menu/Menu.tsx';
 import Mission from './sections/Mission/Mission.tsx';
+import Products from './sections/Products/Products.tsx';
   
 
 function App() {
@@ -23,7 +24,6 @@ function App() {
     <header>
       <Menu/>
     </header>
-    
     <div className="wrapper">
       <div className="content">
       <Header/>  
@@ -32,6 +32,7 @@ function App() {
         <Mission/>
         <Experience/>
         <StackingCards/>
+        <Products/>
       </main>
       </div>
     </div>

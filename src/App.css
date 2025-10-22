@@ -17,9 +17,7 @@
   backdrop-filter: blur(20px);
   padding: 1rem;
   position: fixed;
-  width: 80%;
-  left: 49%;
-  transform: translateX(-50%);
+  width: 83%;
   top: 2rem;
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -86,21 +84,32 @@
   background-position: center;
   position: absolute;
   will-change: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-layer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section__big-logo{
-  background-image: url(../../public/images/back-logo.jpg);
+  background-image: url('/images/back-logo.jpg');
   transform: translate3d(0, calc(var(--scrollTop, 0px) * 0.5), 0);
 }
 
 .hero-section__logo{
-  background-image: url(../../public/images/header.jpg);
+  background-image: url('/images/header.jpg');
   transform: translate3d(0, calc(var(--scrollTop, 0px) * 0.7), 0);
   height: 100vh;
 }
 
 .hero-section__logo-forest{
-  background-image: url(../../public/images/header-forest.png);
+  background-image: url('/images/logo__forest2.PNG');
   height: 100vh;
   margin-top: 50px;
   z-index: 2;
@@ -111,11 +120,8 @@
   align-content: center;
   font-size: clamp(5rem, 1.25rem + 18.75vw, 18.125rem);
   color: var(--main-title-color);
-  font-family: Angst-normal;
+  font-family: var(--normal-f);
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .grid-section{
@@ -211,14 +217,18 @@
 }
 
 .avatarka{
-  max-width: 400px;
-  min-height: 200px;
+  min-width: 400px;
+  min-height: 400px;
   justify-self: center;
   border-radius: 30px;
-  display: flex;
-  justify-content: center;
+  background-image: url('/images/avatarka.jpg');
+  background-size: cover;
 }
 
+
+.headliner-block{
+  justify-self: center;
+}
 
 .special-block{
   padding-block: 20px;
@@ -300,7 +310,7 @@
 }
 
 .bear{
-  background-image: url(../public/images/bear.png);
+  background-image: url('/images/bear.png');
   width: 500px;
   height: 100vh;
   background-size: cover;
@@ -336,19 +346,19 @@
 }
 
 .ecology{
-  background-image: url('../public/images/ecology.jpg');
+  background-image: url('/images/ecology.jpg');
 }
 
 .quality{
-  background-image: url('../public/images/quality.jpg');
+  background-image: url('/images/quality.jpg');
 }
 
 .professional{
-  background-image: url('../public/images/professional.jpg');
+  background-image: url('/images/professional.jpg');
 }
 
 .individual{
-  background-image: url('../public/images/individual.jpg');
+  background-image: url('/images/individual.jpg');
   filter: brightness(.4);
 }
 
@@ -402,5 +412,6 @@
 .experience-card:hover .experience-card__paragraph{
   opacity: 1;
 }
+
 
 
