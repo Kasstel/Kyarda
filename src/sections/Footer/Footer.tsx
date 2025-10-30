@@ -27,7 +27,7 @@ export default function Footer() {
   ];
   return (
     <>
-      <section className="footer">
+      <section id="contacts" className="footer">
         <BlurText
           text="Мы ответим на все ваши вопросы!"
           delay={150}

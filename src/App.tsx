@@ -30,7 +30,7 @@ function App() {
       <div className="content">
       <Header/>  
       <main>
-        <ArticlesSection/>
+        <ArticlesSection />
         <Mission/>
         <Experience/>
         <StackingCards/>

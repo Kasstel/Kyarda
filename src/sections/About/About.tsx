@@ -4,9 +4,6 @@ import { ScrollSmoother } from "gsap/all";
 import { useEffect } from "react";
 import "../../App.css";
 import "../../assets/fonts/fonts.css";
-import ProfileCard from "../../UI-features/ProfileCard/ProfileCard";
-import SpotlightCard from "../../UI-features/SpotlightCard/SpotlightCard";
-import CountUp from "../../UI-features/CountUp/CountUp";
 import BlurText from "../../UI-features/BlurText/BlurText";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -73,7 +70,7 @@ export default function ArticlesSection() {
   }, []);
 
   return (
-    <section className="about section">
+    <section id="about" className="about section">
       <div data-speed="1" className="about__title-block section-title">
         <h2 className="main-title">завод пиломатериалов</h2>
         <h2 className="main-title">"Кьярда"</h2>

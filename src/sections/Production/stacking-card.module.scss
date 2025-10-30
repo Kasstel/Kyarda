@@ -28,13 +28,14 @@
         overflow: hidden;
 
         &__content {
-          background-color: #fff;
+          background-color: var(--text-color);
           display: grid;
           grid-template-rows: min-content;
           grid-template-columns: min-content;
-          padding: 3rem;
+          padding: 1rem 3rem 3rem;
           position: relative;
           width: 50%;
+          gap: 20px
         }
 
         &__number {
@@ -43,8 +44,8 @@
           width: 3rem;
           margin-bottom: 0.5rem;
           border-radius: 50%;
-          background-color: aquamarine;
-          color: #000;
+          background-color: var(--bg-color);
+          color: #fff;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -53,17 +54,28 @@
         }
 
         &__media {
-          object-fit: cover;
+          object-fit: fill;
           width: 50%;
           height: 100%;
         }
         &__title{
           padding: 10px;
+          font-family: var(--bold-f);
+          color: var(--main-title-color);
+          font-size: clamp(0.625rem, 0.2232rem + 4.2857vw, 1.5625rem);
         }
         &__text{
           grid-column: 1/3;
-          justify-self: center;
-          align-self: center;
+          font-family: var(--normal-f);
+          color:#000;
+          font-size: clamp(0.625rem, 0.3571rem + 2.8571vw, 1.25rem);
+          margin-bottom: 20px;
+          .additional{
+            padding: 0;
+            color: var(--main-title-color);
+            font-family: var(--bold-f);
+            font-size: clamp(0.625rem, 0.0893rem + 5.7143vw, 1.875rem);
+          }
         }
       }
     }

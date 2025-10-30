@@ -4,7 +4,7 @@ import './Products.css'
 export default function Products(){
   return(
     <>
-      <section className="products">
+      <section id="products" className="products">
           <h2 className='products__section-title'>Ходовые Товары</h2>
           <button className='products__card-button'>
             <article className='products__card'>
