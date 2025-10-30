@@ -13,7 +13,8 @@
   padding-inline: var(--padding-inline);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-rows: min-content;
+  gap: 40px;
 }
 
 
@@ -28,4 +29,29 @@
 
 .footer__contacts{
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer__contacts-list{
+}
+
+.footer__contacts-item{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  background: var(--text-color);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.footer__contacts-item__media{
+  width: 50px;
+}
+
+.footer__contacts-item__content{
+  font-family: var(--normal-f);
 }

@@ -46,28 +46,40 @@ export default function Footer() {
         </div>
         <div className="footer__contacts">
           <ul className="footer__contacts-list">
-            <li></li>
-            <li></li>
-            <li></li>
+            <li className="footer__contacts-item">
+              <img className="footer__contacts-item__media" src="/images/phone.png"></img>
+              <a  className="footer__contacts-item__content" href="tel:+79803705010">+79803705010</a>
+            </li>
+            <li className="footer__contacts-item">
+              <img className="footer__contacts-item__media" src="/images/mail.png"></img>
+              <a  className="footer__contacts-item__content" href="mailto:Kyardaspb@yandex.ru">Kyardaspb@yandex.ru</a>
+            </li>
+            <li className="footer__contacts-item">
+              <img className="footer__contacts-item__media" src="/images/location.png"></img>
+              <a  className="footer__contacts-item__content" href="https://yandex.ru/maps/10174/saint-petersburg-and-leningrad-oblast/house/derevnya_novoye_devyatkino_9a/Z0kYcg5iT0YOQFhqfXx2cX1mYA==/?ll=30.492638%2C60.070155&z=16">Новое Девяткино, 9А</a>
+            </li>
           </ul>
-          <p>График работы: ежедневно
-          с 9.00 - 20.00</p>
+          <p  className="footer__contacts-item footer__contacts-item__content">График работы: ежедневно с 9.00 - 20.00</p>
           <div
-          style={{ height: "200px", width: "400px", position: "relative", overflow: "hidden" }}
-        >
-          <LogoLoop
-            logos={imageLogos}
-            speed={80}
-            direction="left"
-            logoHeight={48}
-            gap={40}
-            pauseOnHover
-            scaleOnHover
-            ariaLabel="Technology partners"
-          />
+            style={{
+              height: "100px",
+              width: "400px",
+              position: "relative",
+              overflow: "hidden",
+            }}
+          >
+            <LogoLoop
+              logos={imageLogos}
+              speed={80}
+              direction="left"
+              logoHeight={48}
+              gap={40}
+              pauseOnHover
+              scaleOnHover
+              ariaLabel="Technology partners"
+            />
+          </div>
         </div>
-        </div>
-        
       </section>
     </>
   );
