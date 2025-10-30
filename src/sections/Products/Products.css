@@ -12,7 +12,7 @@
 .products__section-title{
   font-family: var(--normal-f);
   font-size: 50px;
-  color: #000;
+  color: var(--text-color);
   grid-column: 1/4;
   justify-self: center;
 }

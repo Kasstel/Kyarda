@@ -22,7 +22,7 @@ export default function Mission() {
             И
             <a className="another__special-text special-text">
               <ShinyText
-                text="Быть надёжным партнёром"
+                text="Внедрять инновации"
                 disabled={false}
                 speed={4}
                 className="custom-class"

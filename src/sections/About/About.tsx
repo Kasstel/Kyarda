@@ -6,6 +6,8 @@ import "../../App.css";
 import "../../assets/fonts/fonts.css";
 import ProfileCard from "../../UI-features/ProfileCard/ProfileCard";
 import SpotlightCard from "../../UI-features/SpotlightCard/SpotlightCard";
+import CountUp from "../../UI-features/CountUp/CountUp";
+import BlurText from "../../UI-features/BlurText/BlurText";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -79,28 +81,106 @@ export default function ArticlesSection() {
       <div data-speed=".9" className="list-view" id="list-view">
         <ul className="about__info-block ">
           <li className="first about__info-card">
-            <h2 className="main-title">1997</h2>
-            <p className="text-block text">Год основания</p>
+            <h2 className="main-title">
+              <BlurText
+                text="1997"
+                delay={150}
+                animateBy="letters"
+                direction="bottom"
+                className="title"
+              />
+            </h2>
+            <BlurText
+              text="Год основания"
+              delay={150}
+              animateBy="words"
+              direction="bottom"
+              className="text-block text"
+            />
           </li>
           <li className="about__info-card">
-            <h2 className="main-title">20 000</h2>
-            <p className="text-block text">Завершенных заказов</p>
+            <h2 className="main-title">
+              <BlurText
+                text="20000"
+                delay={150}
+                animateBy="letters"
+                direction="bottom"
+                className="title"
+              />
+            </h2>
+            <p className="text-block text">
+              <BlurText
+                text="Завершенных заказов"
+                delay={150}
+                animateBy="words"
+                direction="bottom"
+                className="title"
+              />
+            </p>
           </li>
           <li className="about__info-card">
-            <h2 className="main-title">97 %</h2>
-            <p className="text-block text">Довольных клиентов</p>
+            <h2 className="main-title">
+              <BlurText
+                text="97 %"
+                delay={150}
+                animateBy="letters"
+                direction="bottom"
+                className="title"
+              />
+            </h2>
+            <p className="text-block text">
+              <BlurText
+                text="Довольных клиентов"
+                delay={150}
+                animateBy="words"
+                direction="bottom"
+                className="title"
+              />
+            </p>
           </li>
           <li className="about__info-card">
-            <h2 className="volume main-title">15 000 м3</h2>
-            <p className="text-block text">Обрабатывается ежегодно</p>
+            <h2 className="volume main-title">
+              <BlurText
+                text="15 000 м3"
+                delay={90}
+                animateBy="letters"
+                direction="bottom"
+                className="title"
+              />
+            </h2>
+            <p className="text-block text">
+              <BlurText
+                text="Обрабатывается ежегодно"
+                delay={150}
+                animateBy="words"
+                direction="bottom"
+                className="title"
+              />
+            </p>
           </li>
         </ul>
       </div>
       <div data-speed="1" className="headliner-block">
         <div className="avatarka"></div>
         <div className="special-block">
-          <p className="special-title">Собственник:</p>
-          <p className="special-title">Константинов Николай Михайлович</p>
+          <p className="special-title">
+            <BlurText
+              text="Собственник:"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="title"
+            />
+          </p>
+          <p className="special-title">
+            <BlurText
+              text="Константинов Николай Михайлович"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="title"
+            />
+          </p>
         </div>
       </div>
     </section>

@@ -11,6 +11,8 @@ import Experience from './sections/Experience/Experience.tsx';
 import Menu from './sections/Menu/Menu.tsx';
 import Mission from './sections/Mission/Mission.tsx';
 import Products from './sections/Products/Products.tsx';
+import Geo from './sections/Geo/Geo.tsx';
+import Footer from './sections/Footer/Footer.tsx';
   
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
         <Experience/>
         <StackingCards/>
         <Products/>
+        <Geo/>
+        <Footer/>
       </main>
       </div>
     </div>

@@ -31,7 +31,7 @@
 .menu__logo{
   position: fixed;
   z-index: 10;
-  width: 100px;
+  max-width: 100px;
   margin: 10px 0px 0px 10px;
 }
 
@@ -307,6 +307,7 @@
   padding-inline: var(--padding-inline);
   display: grid;
   gap: 25px;
+  justify-content: center;
 }
 
 .bear{
@@ -323,8 +324,8 @@
 
 .experience-card{
   position: relative;
-  height: 400px;
-  width: 300px;
+  min-height: 400px;
+  max-width: 300px;
   background-color: #1f322b;
   transition: all 0.3s ease;
   padding: 30px;
