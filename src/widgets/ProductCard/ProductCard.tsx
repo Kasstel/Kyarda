@@ -8,9 +8,9 @@ export interface IProductCard{
   image: string,
   salePrice: number,
   firstPrice?: number,
-  typeBoard?: string,
+  typeBoard?: typeBoard,
   thickness?: string,
-  width?: number,
+  width?: string,
   description: string
 }
 
