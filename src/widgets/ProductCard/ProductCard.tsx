@@ -10,7 +10,7 @@ export interface IProductCard{
   firstPrice?: number,
   typeBoard?: string,
   thickness?: string,
-  width?: string,
+  width?: number,
   description: string
 }
 

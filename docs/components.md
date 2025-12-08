@@ -1,6 +1,6 @@
 # Component Documentation
 
-*Generated on 2025-12-08T16:13:24.296Z*
+*Generated on 2025-12-08T16:21:21.091Z*
 
 ---
 
@@ -286,7 +286,7 @@
 | image | `string` | ✅ | - | - |
 | salePrice | `number` | ✅ | - | - |
 | firstPrice | `number` | ❌ | - | - |
-| typeBoard | `typeBoard` | ❌ | - | - |
+| typeBoard | `string` | ❌ | - | - |
 | thickness | `string` | ❌ | - | - |
 | width | `string` | ❌ | - | - |
 | description | `string` | ✅ | - | - |
@@ -308,7 +308,7 @@
 | image | `string` | ✅ | - | - |
 | salePrice | `number` | ✅ | - | - |
 | firstPrice | `number` | ❌ | - | - |
-| typeBoard | `typeBoard` | ❌ | - | - |
+| typeBoard | `string` | ❌ | - | - |
 | thickness | `string` | ❌ | - | - |
 | width | `string` | ❌ | - | - |
 | description | `string` | ✅ | - | - |
