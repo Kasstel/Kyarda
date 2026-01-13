@@ -2,8 +2,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-
-export function initParallax() {
+export function initParallax(onReady?: () => void) {
   const layers = gsap.utils.toArray<HTMLElement>(".layer");
 
   layers.forEach((layer) => {
@@ -17,30 +16,35 @@ export function initParallax() {
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        invalidateOnRefresh: true, // 👈 пересчитывает значения при refresh
+        invalidateOnRefresh: true,
       },
     });
   });
 
-  // 👇 Ключевой момент — заставляем GSAP пересчитать все позиции после загрузки и восстановления скролла
-  const refreshAfterLoad = () => {
+  const refreshAll = () => {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         ScrollTrigger.refresh(true);
+        onReady?.(); // ← сообщаем что GSAP готов
       });
     });
   };
 
-  // Срабатывает при загрузке и восстановлении скролла
-  window.addEventListener("load", refreshAfterLoad);
-  window.addEventListener("DOMContentLoaded", refreshAfterLoad);
+  window.addEventListener("load", refreshAll);
+  window.addEventListener("DOMContentLoaded", refreshAll);
 
-  // 👇 дополнительный костыль для браузеров, которые восстанавливают скролл позже
-  setTimeout(() => ScrollTrigger.refresh(true), 500);
+  setTimeout(() => {
+    ScrollTrigger.refresh(true);
+    onReady?.();
+  }, 400);
+
+  
 
   return () => {
     ScrollTrigger.getAll().forEach((st) => st.kill());
-    window.removeEventListener("load", refreshAfterLoad);
-    window.removeEventListener("DOMContentLoaded", refreshAfterLoad);
+    window.removeEventListener("load", refreshAll);
+    window.removeEventListener("DOMContentLoaded", refreshAll);
   };
+
 }
+

@@ -46,8 +46,9 @@ export default function StackingCards() {
           );
         }
       });
+      
     }
-
+    
 
     const scrollSection = document.querySelectorAll(`.${styles["scroll-section"]}`);
 
@@ -60,6 +61,8 @@ export default function StackingCards() {
   items: Array.from(items ?? []) as HTMLElement[]
 });
     })
+
+
     return () => {
   ScrollTrigger.getAll().forEach(trigger => trigger.kill());
 };

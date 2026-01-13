@@ -9,6 +9,10 @@
   gap: 20px;
 }
 
+.modal-product{
+  justify-self: center;
+}
+
 .products__section-title{
   font-family: var(--normal-f);
   font-size: 50px;
@@ -43,6 +47,7 @@
   background-position: center;
   transition: all 0.5s ease;
   filter: brightness(0.5);
+  background-size: cover; 
 }
 
 .products__card:hover .background{

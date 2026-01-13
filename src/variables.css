@@ -3,13 +3,15 @@
   --bold-f: Angst-bold;
   --thin-f: Angst-thin;
   --normal-f: Angst-normal;
-  --padding-inline: 140px;
+  --padding-inline: clamp(40px, 0.00px + 12.50vw, 240px);
   --padding-block: 100px; 
-  --font-size: clamp();
+  --font-size: clamp(12px, 10.40px + 0.50vw, 20px);
   --text-size: 20px;
   --title-size: 50px;
   --main-title-color:#253935;
   --bg-color: #142927;
   --bg-footer-color:#0d1b19;
   --text-color: #dfe2dc;
+  --menu-item-color: #dfe2dc
 }
+

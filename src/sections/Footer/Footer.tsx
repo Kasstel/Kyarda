@@ -3,6 +3,9 @@ import LogoLoop from "../../UI-features/LogoLoop/LogoLoop";
 import "./Footer.css";
 
 export default function Footer() {
+
+
+
   const imageLogos = [
     {
       src: "/images/vk-logo.png",
@@ -48,7 +51,7 @@ export default function Footer() {
           <ul className="footer__contacts-list">
             <li className="footer__contacts-item">
               <img className="footer__contacts-item__media" src="/images/phone.png"></img>
-              <a  className="footer__contacts-item__content" href="tel:+79803705010">+79803705010</a>
+              <a  className="footer__contacts-item__content" href="tel:+79990087678">+7 (999) 008-76-78</a>
             </li>
             <li className="footer__contacts-item">
               <img className="footer__contacts-item__media" src="/images/mail.png"></img>
@@ -79,6 +82,11 @@ export default function Footer() {
               ariaLabel="Technology partners"
             />
           </div>
+        </div>
+        <div className="footer__help">
+          <img src='/images/manager.webp' className="footer__help-photo"></img>
+          <p>Олеся</p>
+          <p>Специалист отдела продаж</p>
         </div>
       </section>
     </>

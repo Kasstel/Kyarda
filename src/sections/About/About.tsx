@@ -98,7 +98,7 @@ export default function ArticlesSection() {
           <li className="about__info-card">
             <h2 className="main-title">
               <BlurText
-                text="20000"
+                text="20 000"
                 delay={150}
                 animateBy="letters"
                 direction="bottom"
@@ -138,7 +138,7 @@ export default function ArticlesSection() {
           <li className="about__info-card">
             <h2 className="volume main-title">
               <BlurText
-                text="15 000 м3"
+                text="15 000 м³"
                 delay={90}
                 animateBy="letters"
                 direction="bottom"
