@@ -241,7 +241,7 @@
 .text{
   font-family: Angst-normal;
   color: var(--text-color);
-  font-size: clamp(5px, 2.00px + 0.94vw, 20px);
+  font-size: clamp(15px, 2.00px + 0.94vw, 20px);
 }
 
 .text-block{
@@ -273,7 +273,7 @@
   text-transform: uppercase;
   font-family: Angst-normal;
   color: var(--text-color);
-  font-size: clamp(14px, 6.80px + 2.25vw, 50px);
+  font-size: clamp(25px, 20.00px + 1.56vw, 50px);
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -318,8 +318,8 @@
 }
 
 .special-text{
-  font-family: Angst-normal;
-  font-size: 50px;
+  font-family: var(--normal-f);
+  font-size: clamp(14px, 6.80px + 2.25vw, 50px);
   z-index: 1;
 }
 
@@ -328,12 +328,15 @@
   border-radius: 10px;
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+
 }
 
 .another_mission__text{
   display: flex;
   justify-content: end;
-  padding-right: 5rem;
+  
 }
 
 .another__special-text{
@@ -349,8 +352,7 @@
 }
 
 .experience-title{
-  font-size: 50px;
-  grid-column: 1/5;
+  grid-column: 1/2;
   padding-bottom: 30px;
 }
 
@@ -358,9 +360,8 @@
   background-color: var(--bg-color);
   padding-block: 80px 110px;
   padding-inline: var(--padding-inline);
-  display: grid;
+  display: grid; 
   gap: 25px;
-  justify-content: center;
 }
 
 .bear{
@@ -375,16 +376,31 @@
   z-index: 0;
 }
 
+.experience-card__container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .experience-card{
   position: relative;
-  min-height: 400px;
-  max-width: 300px;
+  min-height: clamp(200px, 160.00px + 12.50vw, 400px);
+  width: 100%;
+  max-width: clamp(200px, 184.00px + 5.00vw, 280px);
   background-color: #1f322b;
   transition: all 0.3s ease;
   padding: 30px;
   overflow: hidden;
-  display: grid;
+  display: grid;  
   justify-content: center;
+}
+
+@media (width <=1444px) {
+  .experience-card__container{
+    justify-content: center;
+  }
+  
 }
 
 .experience-card__background{
@@ -434,7 +450,7 @@
 
 .experience-card__title{
   font-family: var(--bold-f);
-  font-size: 25px;
+  font-size: clamp(14px, 11.80px + 0.69vw, 25px);
   color: var(--text-color);
   text-shadow: 0 4px 8px rgba(0,0,0.3);
 }

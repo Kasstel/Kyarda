@@ -5,7 +5,7 @@
   --normal-f: Angst-normal;
   --padding-inline: clamp(40px, 0.00px + 12.50vw, 240px);
   --padding-block: 100px; 
-  --font-size: clamp(12px, 10.40px + 0.50vw, 20px);
+  --font-size: clamp(15px, 14.00px + 0.31vw, 20px);
   --text-size: 20px;
   --title-size: 50px;
   --main-title-color:#253935;

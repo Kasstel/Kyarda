@@ -4,7 +4,8 @@ export default function Experience(){
   return(
     <section className="experience__section">
             <h2 className="experience-title section-title main-title">Почему именно мы?</h2>
-            <article className='experience-card'>
+            <div className="experience-card__container">
+              <article className='experience-card'>
               <div className="ecology experience-card__background"></div>
               <div className="card-overlay"></div>
               <div className="experience-card__content-block">
@@ -50,6 +51,8 @@ export default function Experience(){
                 </p>
               </div>    
             </article>
+            </div>
+            
     </section>
   )
 }
