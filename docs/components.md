@@ -1,12 +1,21 @@
 # Component Documentation
 
-*Generated on 2026-01-16T12:29:11.046Z*
+*Generated on 2026-01-22T18:05:31.004Z*
 
 ---
 
-## Experience
+## Footer
 
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Experience/Experience.tsx`
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx`
+
+**Export:** Default
+
+
+---
+
+## Geo
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Geo/Geo.tsx`
 
 **Export:** Default
 

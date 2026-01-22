@@ -85,8 +85,8 @@ export default function Footer() {
         </div>
         <div className="footer__help">
           <img src='/images/manager.webp' className="footer__help-photo"></img>
-          <p>Олеся</p>
-          <p>Специалист отдела продаж</p>
+          <p className="footer__help-paragraph">Олеся</p>
+          <p className="footer__help-paragraph">Специалист отдела продаж</p>
         </div>
       </section>
     </>

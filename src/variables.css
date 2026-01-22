@@ -7,7 +7,7 @@
   --padding-block: 100px; 
   --font-size: clamp(15px, 14.00px + 0.31vw, 20px);
   --text-size: 20px;
-  --title-size: 50px;
+  --title-size: clamp(27px, 22.40px + 1.44vw, 50px);
   --main-title-color:#253935;
   --bg-color: #142927;
   --bg-footer-color:#0d1b19;

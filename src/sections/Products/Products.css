@@ -15,7 +15,7 @@
 
 .products__section-title{
   font-family: var(--normal-f);
-  font-size: clamp(25px, 20.00px + 1.56vw, 50px);
+  font-size: var(--title-size);
   color: var(--text-color);
   grid-column: 1/-1;
   justify-self: center;
