@@ -1,5 +1,4 @@
 import { useEffect } from "react"
-import { Cart } from "../Cart/Cart"
 import { useModal } from "../ModalContext/ModalContext"
 import { ProductCard } from "../ProductCard/ProductCard"
 import "./Modal.css"

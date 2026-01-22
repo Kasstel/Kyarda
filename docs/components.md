@@ -1,23 +1,19 @@
 # Component Documentation
 
-*Generated on 2026-01-22T18:05:31.004Z*
+*Generated on 2026-01-22T18:14:22.242Z*
 
 ---
 
-## Footer
+## Modal
 
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx`
+**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Modal/Modal.tsx`
 
-**Export:** Default
+**Export:** Named
 
+### Hooks Used
 
----
-
-## Geo
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Geo/Geo.tsx`
-
-**Export:** Default
+- `useModal` (line 7)
+- `useEffect` (line 10)
 
 
 ---
