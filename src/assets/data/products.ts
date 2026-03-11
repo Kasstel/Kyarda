@@ -1,10 +1,12 @@
 import type { IProductCard } from "../../widgets/ProductCard/ProductCard";
-
+import kalibr__pilo from '../../images/kalibr__pilo.png'
+import strog__pilo from '../../images/strog__pilo.jpg'
+import prof__pilo from '../../images/prof__pilo.png'
 
 export const PRODUCTS: IProductCard[] = [
   {
     name: "Калиброванный",
-    image: '/images/kalibr__pilo.png',
+    image: kalibr__pilo,
     salePrice: 27000,
     firstPrice: 28000,
     thickness: "25 мм",
@@ -14,7 +16,7 @@ export const PRODUCTS: IProductCard[] = [
   },
   {
     name: "Строганый",
-    image: '/images/strog__pilo.jpg',
+    image: strog__pilo,
     salePrice: 31000,
     firstPrice: 34000,
     thickness: "20 мм",
@@ -25,7 +27,7 @@ export const PRODUCTS: IProductCard[] = [
   },
   {
     name: "Профилированный",
-    image: '/images/prof__pilo.png',
+    image: prof__pilo,
     salePrice: 31000,
     firstPrice: 34000,
     thickness: "20 мм",

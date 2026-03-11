@@ -1,29 +1,37 @@
 import BlurText from "../../UI-features/BlurText/BlurText";
-import LogoLoop from "../../UI-features/LogoLoop/LogoLoop";
+import LogoLoop, { type LogoItem } from "../../UI-features/LogoLoop/LogoLoop";
 import "./Footer.css";
+import phone from "../../images/phone.png";
+import mail from "../../images/mail.png";
+import location from "../../images/location.png";
+import vk__logo from "../../images/vk-logo.png";
+import avito__logo from "../../images/avito-logo.png";
+import geo__logo from "../../images/2gis-logo.png";
+import yandex__logo from "../../images/yandex-maps-logo.png";
+
 
 export default function Footer() {
 
 
 
-  const imageLogos = [
+  const imageLogos: LogoItem[] = [
     {
-      src: "/images/vk-logo.png",
+      src: vk__logo,
       alt: "Ссылка на Вк",
       href: "https://company1.com",
     },
     {
-      src: "/images/avito-logo.png",
+      src: avito__logo,
       alt: "Ссылка на Авито",
       href: "https://company2.com",
     },
     {
-      src: "/images/2gis-logo.png",
+      src: geo__logo,
       alt: "Ссылка на 2 гис",
       href: "https://company3.com",
     },
     {
-      src: "/images/yandex-maps-logo.png",
+      src:  yandex__logo,
       alt: "Ссылка на Яндекс-карты",
       href: "https://company3.com",
     },
@@ -50,15 +58,15 @@ export default function Footer() {
         <div className="footer__contacts">
           <ul className="footer__contacts-list">
             <li className="footer__contacts-item">
-              <img className="footer__contacts-item__media" src="/images/phone.png"></img>
+              <img className="footer__contacts-item__media" src={phone}></img>
               <a  className="footer__contacts-item__content" href="tel:+79990087678">+7 (999) 008-76-78</a>
             </li>
             <li className="footer__contacts-item">
-              <img className="footer__contacts-item__media" src="/images/mail.png"></img>
+              <img className="footer__contacts-item__media" src={mail}></img>
               <a  className="footer__contacts-item__content" href="mailto:Kyardaspb@yandex.ru">Kyardaspb@yandex.ru</a>
             </li>
             <li className="footer__contacts-item">
-              <img className="footer__contacts-item__media" src="/images/location.png"></img>
+              <img className="footer__contacts-item__media" src={location}></img>
               <a  className="footer__contacts-item__content" href="https://yandex.ru/maps/10174/saint-petersburg-and-leningrad-oblast/house/derevnya_novoye_devyatkino_9a/Z0kYcg5iT0YOQFhqfXx2cX1mYA==/?ll=30.492638%2C60.070155&z=16">Новое Девяткино, 9А</a>
             </li>
           </ul>
