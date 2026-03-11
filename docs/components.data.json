@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-03-11T12:12:07.040Z",
+  "components": [
+    {
+      "name": "ArticlesSection",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/About/About.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "gsap",
+        "gsap/ScrollTrigger",
+        "gsap/all",
+        "react",
+        "../../App.css",
+        "../../assets/fonts/fonts.css",
+        "../../UI-features/BlurText/BlurText"
+      ],
+      "hooks": [
+        {
+          "name": "useEffect",
+          "line": 12
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Footer",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "../../UI-features/BlurText/BlurText",
+        "../../UI-features/LogoLoop/LogoLoop",
+        "./Footer.css"
+      ],
+      "hooks": [],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "StackingCards",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "gsap",
+        "gsap/ScrollTrigger",
+        "./stacking-card.module.scss",
+        "../../variables.css"
+      ],
+      "hooks": [
+        {
+          "name": "useEffect",
+          "line": 9
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Modal",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Modal/Modal.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "../ModalContext/ModalContext",
+        "../ProductCard/ProductCard",
+        "./Modal.css"
+      ],
+      "hooks": [
+        {
+          "name": "useModal",
+          "line": 7
+        },
+        {
+          "name": "useEffect",
+          "line": 9
+        }
+      ],
+      "isExported": true,
+      "exportType": "named"
+    }
+  ]
+}
