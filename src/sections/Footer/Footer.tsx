@@ -1,14 +1,16 @@
 import BlurText from "../../UI-features/BlurText/BlurText";
 import LogoLoop, { type LogoItem } from "../../UI-features/LogoLoop/LogoLoop";
 import "./Footer.css";
-import phone from "../../images/phone.png";
-import mail from "../../images/mail.png";
-import location from "../../images/location.png";
-import vk__logo from "../../images/vk-logo.png";
-import avito__logo from "../../images/avito-logo.png";
-import geo__logo from "../../images/2gis-logo.png";
-import yandex__logo from "../../images/yandex-maps-logo.png";
 
+
+const locationIcon = `${import.meta.env.BASE_URL}images/location.png`;
+const phoneIcon = `${import.meta.env.BASE_URL}images/phone.png`;
+const mailIcon = `${import.meta.env.BASE_URL}images/mail.png`;  
+
+const vkLogo = `${import.meta.env.BASE_URL}images/vk-logo.png`;
+const avitoLogo = `${import.meta.env.BASE_URL}images/avito-logo.png`;
+const geoLogo = `${import.meta.env.BASE_URL}images/2gis-logo.png`;
+const yandexLogo = `${import.meta.env.BASE_URL}images/yandex-maps-logo.png`;
 
 export default function Footer() {
 
@@ -16,22 +18,22 @@ export default function Footer() {
 
   const imageLogos: LogoItem[] = [
     {
-      src: vk__logo,
+      src: vkLogo,
       alt: "Ссылка на Вк",
       href: "https://company1.com",
     },
     {
-      src: avito__logo,
+      src: avitoLogo,
       alt: "Ссылка на Авито",
       href: "https://company2.com",
     },
     {
-      src: geo__logo,
+      src: geoLogo,
       alt: "Ссылка на 2 гис",
       href: "https://company3.com",
     },
     {
-      src:  yandex__logo,
+      src:  yandexLogo,
       alt: "Ссылка на Яндекс-карты",
       href: "https://company3.com",
     },
@@ -58,15 +60,15 @@ export default function Footer() {
         <div className="footer__contacts">
           <ul className="footer__contacts-list">
             <li className="footer__contacts-item">
-              <img className="footer__contacts-item__media" src={phone}></img>
+              <img className="footer__contacts-item__media" src={phoneIcon}></img>
               <a  className="footer__contacts-item__content" href="tel:+79990087678">+7 (999) 008-76-78</a>
             </li>
             <li className="footer__contacts-item">
-              <img className="footer__contacts-item__media" src={mail}></img>
+              <img className="footer__contacts-item__media" src={mailIcon}></img>
               <a  className="footer__contacts-item__content" href="mailto:Kyardaspb@yandex.ru">Kyardaspb@yandex.ru</a>
             </li>
             <li className="footer__contacts-item">
-              <img className="footer__contacts-item__media" src={location}></img>
+              <img className="footer__contacts-item__media" src={locationIcon}></img>
               <a  className="footer__contacts-item__content" href="https://yandex.ru/maps/10174/saint-petersburg-and-leningrad-oblast/house/derevnya_novoye_devyatkino_9a/Z0kYcg5iT0YOQFhqfXx2cX1mYA==/?ll=30.492638%2C60.070155&z=16">Новое Девяткино, 9А</a>
             </li>
           </ul>

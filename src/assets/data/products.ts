@@ -1,7 +1,9 @@
 import type { IProductCard } from "../../widgets/ProductCard/ProductCard";
-import kalibr__pilo from '../../images/kalibr__pilo.png'
-import strog__pilo from '../../images/strog__pilo.jpg'
-import prof__pilo from '../../images/prof__pilo.png'
+
+
+const kalibr__pilo = `${import.meta.env.BASE_URL}images/kalibr__pilo.png`;
+const strog__pilo = `${import.meta.env.BASE_URL}images/strog__pilo.jpg`;
+const prof__pilo = `${import.meta.env.BASE_URL}images/prof__pilo.png`;
 
 export const PRODUCTS: IProductCard[] = [
   {
