@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/Kyarda/',
   build: {
-    outDir: 'docs'
+    outDir: 'dist'
   }
 })

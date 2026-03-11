@@ -6,7 +6,6 @@ import "./Modal.css"
 export function Modal(){
   const {modalType, modalData, closeModal} = useModal()
 
-
   useEffect(() => {
     if (modalType) {
       document.body.style.overflow = "hidden";   // 🔒 блокируем скролл

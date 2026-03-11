@@ -1,0 +1,7 @@
+{
+  "srcDir": "./src/widgets",
+  "outDir": "./docs",
+  "format": "markdown",
+  "gitHooksEnabled": false,
+  "includePrivate": false
+}

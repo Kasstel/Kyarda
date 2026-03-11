@@ -8,6 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+dist
+# `dist` is build output (generated via `npm run build`) and is deployed to gh-pages.
+# It should not be committed to the main branch.
 dist-ssr
 *.local
 

@@ -72,7 +72,7 @@ export default function ArticlesSection() {
   return (
     <section id="about" className="about section">
       <div data-speed="1" className="about__title-block section-title">
-        <h2 className="main-title">завод пиломатериалов</h2>
+        <h2 className="main-title">Завод пиломатериалов</h2>
         <h2 className="main-title">"Кьярда"</h2>
       </div>
       <div data-speed=".9" className="list-view" id="list-view">
