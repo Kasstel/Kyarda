@@ -1,0 +1,53 @@
+
+.form_button{
+  display: inline;
+  background: transparent;
+  border: 1px solid var(--main-title-color);
+  border-radius: 20px;
+  padding: 0.5rem;
+  color: var(--main-title-color);
+  font-family: 'WorkSans-Bold';
+}
+.form_button:hover{
+  background-color: #1b302244;
+}
+
+.form_button:active{
+  background-color: #1b30221a;
+}
+
+.productCard-image{
+  width: 100%;
+  max-width: 250px;
+  min-height: 130px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.productBlock{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  font-family: var(--thin-f);
+}
+
+.product-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.pricing-block{
+  margin-top: 20px ;
+  opacity: 1;
+}
+
+.price{
+  font-family: var(--normal-f);
+  color: black;
+}
+
+.old-price{
+  font-family: var(--normal-f);
+}
+

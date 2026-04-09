@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { useModal } from "../ModalContext/ModalContext"
 import { ProductCard } from "../ProductCard/ProductCard"
 import "./Modal.css"
+import { Cart } from "../Cart/Cart"
 
 export function Modal(){
   const {modalType, modalData, closeModal} = useModal()
@@ -24,7 +25,7 @@ export function Modal(){
     <div className="modal-overlay" onClick={closeModal}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         {modalType === "product" && <ProductCard {...modalData} />}
-        {modalType === "cart" && <div>Корзина</div>}
+        {modalType === "cart" && <Cart/>}
       </div>
     </div>
   )

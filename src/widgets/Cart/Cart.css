@@ -1,0 +1,183 @@
+
+.cart-button{
+  position: relative;
+  background-color: transparent;
+  border-radius: 5px;
+  width:  4.7rem;
+  border: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+svg:hover{
+  stroke:#000000;
+  stroke-width: 1%;
+}
+
+.cart{
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__header{
+  font-family: 'WorkSans-bold';
+  color: var(--main-title-color);
+  padding-bottom: 0.4rem;;
+  display: inline;
+  margin: 0 auto;
+}
+
+.button_block{
+  display: flex;
+  
+}
+
+.product{
+  display: flex;
+  gap: 1.5rem;
+  background-color: var(--menu-item-color);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+}
+
+.product-information{
+  display: grid;
+}
+
+.product-header-block{
+  display: flex;
+  gap: 0.1rem;
+}
+
+.trash-button{
+  background: transparent;
+  border: none;
+}
+
+.trash{
+  width: 100%;
+  max-width: 20px;
+}
+
+.product-image{
+  width: 100%;
+  max-width: 110px;
+  min-height: 130px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.product-typeBlock{
+  background-color: var(--type-color-block);
+  padding: 0.4rem;
+  margin-bottom: 0.3rem;
+  align-self: center;
+  width: fit-content;
+  margin-right: 0.3rem;
+}
+
+.product-typeBlock__text{
+  color: var(--type-colot-block__text);
+  font-family: 'Newsreader';
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.product-name__text{
+  color:#000000;
+  font-family: var(--bold-f);
+  letter-spacing: 0.1rem;
+}
+
+.quantity-block{
+  display: inline-flex;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding-inline: 0.4rem;
+  padding-block: 0.1rem;
+  align-items: center;
+}
+
+.quantity-button{
+  grid-row: 5/6;
+  background: transparent;
+  border: none;
+}
+
+.quantity-text{
+  font-family: 'WorkSans' ;
+}
+
+.product-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-block__text{
+  font-family: 'WorkSans-bold';
+  color: var(--main-title-color);
+}
+
+.price-block__text{
+  color: #000000;
+}
+
+.all_clear_button{
+  background: transparent;
+  border: #ffffff;
+  font-family:'WorkSans';
+  font-size: 15px;
+  margin-left: auto;
+}
+
+
+.all_clear_button:hover{
+  color: #00000081
+}
+
+.cart__header-block{
+ display: flex;
+}
+
+.form_button{
+  display: inline;
+  background: transparent;
+  border: 1px solid var(--main-title-color);
+  border-radius: 20px;
+  padding: 0.5rem;
+  color: var(--main-title-color);
+  font-family: 'WorkSans-Bold';
+}
+.form_button:hover{
+  background-color: #1b302244;
+}
+
+.form_button:active{
+  background-color: #1b30221a;
+}
+
+.form-block{
+  display: flex;
+  justify-content: center;
+}
+
+.text-cart {
+  position: absolute;
+
+  top: 0.6rem;    
+  right: 0.3rem;   
+
+  background: red;
+  color: white;
+
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+
+  min-width: 18px;
+  text-align: center;
+}

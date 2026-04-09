@@ -2,7 +2,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-export function initParallax(onReady?: () => void) {
+
+export function initParallax() {
   const layers = gsap.utils.toArray<HTMLElement>(".layer");
 
   layers.forEach((layer) => {
@@ -21,30 +22,12 @@ export function initParallax(onReady?: () => void) {
     });
   });
 
-  const refreshAll = () => {
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        ScrollTrigger.refresh(true);
-        onReady?.(); // ← сообщаем что GSAP готов
-      });
+  return () => {
+    // убиваем только свои триггеры — не все подряд
+    layers.forEach((layer) => {
+      ScrollTrigger.getAll()
+        .filter((st) => st.vars.trigger === (layer.closest(".grid-section") || layer))
+        .forEach((st) => st.kill());
     });
   };
-
-  window.addEventListener("load", refreshAll);
-  window.addEventListener("DOMContentLoaded", refreshAll);
-
-  setTimeout(() => {
-    ScrollTrigger.refresh(true);
-    onReady?.();
-  }, 400);
-
-  
-
-  return () => {
-    ScrollTrigger.getAll().forEach((st) => st.kill());
-    window.removeEventListener("load", refreshAll);
-    window.removeEventListener("DOMContentLoaded", refreshAll);
-  };
-
 }
-

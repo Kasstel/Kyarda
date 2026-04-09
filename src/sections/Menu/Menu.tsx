@@ -3,11 +3,16 @@ import logo from "/images/logo.png";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/all";
 import "../../App.css";
+import { CartPreview } from "../../widgets/Cart/CartPreview";
+import { useCart } from "../../widgets/Cart/Context/Context";
 
 export default function Menu() {
   useEffect(() => {
     gsap.registerPlugin(ScrollSmoother);
   }, []);
+
+
+  const {items} = useCart();
 
   const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -53,6 +58,7 @@ export default function Menu() {
           </ul>
         </nav>
       </div>
+      {(items.length>0) &&<CartPreview/>}
     </>
   );
 }

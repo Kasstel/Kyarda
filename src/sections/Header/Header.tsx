@@ -6,71 +6,64 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Header() {
   useEffect(() => {
-    // ждём 1 тик браузера + 1 тик после установки GSAP/ScrollSmoother
-    requestAnimationFrame(() => {
-      setTimeout(() => {
-        const scrollY = window.scrollY;
-        const viewportHeight = window.innerHeight;
+    // Храним свои триггеры чтобы убивать только их
+    const myTriggers: ScrollTrigger[] = [];
 
-        console.log("REAL scrollY at load:", scrollY);
+    const scrollY = window.scrollY;
+    const viewportHeight = window.innerHeight;
+    const isAtHeader = scrollY < viewportHeight / 2;
 
-        const isAtHeader = scrollY < viewportHeight / 2;
+    if (isAtHeader) {
+      gsap.fromTo(
+        ".hero-section__logo-forest",
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+      );
 
-        if (isAtHeader) {
-          // --- Анимация появления леса ---
-          gsap.fromTo(
-            ".hero-section__logo-forest",
-            { opacity: 0, y: 50 },
-            { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
-          );
+      const st1 = ScrollTrigger.create({
+        trigger: ".header",
+        start: "bottom top",
+        end: "top bottom",
+        scrub: true,
+        invalidateOnRefresh: true,
+        animation: gsap.fromTo(
+          ".hero-section__logo-forest",
+          { y: 0 },
+          { y: 1000, ease: "none" }
+        ),
+      });
+      myTriggers.push(st1);
 
-          // --- Параллакс леса ---
-          gsap.fromTo(
-            ".hero-section__logo-forest",
-            { opacity: 1, y: 0 },
-            {
-              y: 1000,
-              ease: "none",
-              scrollTrigger: {
-                trigger: ".header",
-                start: "bottom top",
-                end: "top bottom",
-                scrub: true,
-                invalidateOnRefresh: true,
-              },
-            }
-          );
+      const st2 = ScrollTrigger.create({
+        trigger: ".header",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        animation: gsap.to(".hero-section__text-block", {
+          yPercent: -30,
+          ease: "none",
+        }),
+      });
+      myTriggers.push(st2);
+    } else {
+      // Просто ставим статичное состояние, НЕ убиваем чужие триггеры
+      gsap.set(".hero-section__logo-forest", { opacity: 1, y: 0 });
+      gsap.set(".hero-section__text-block", { opacity: 1, y: 0 });
+    }
 
-          // --- Параллакс текста ---
-          gsap.to(".hero-section__text-block", {
-            yPercent: -30,
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".header",
-              start: "top bottom",
-              end: "bottom top",
-              scrub: true,
-            },
-          });
-
-        } else {
-          // --- Статичное состояние ---
-          gsap.killTweensOf(".hero-section__logo-forest");
-          gsap.killTweensOf(".hero-section__text-block");
-
-          ScrollTrigger.getAll().forEach((st) => st.kill());
-
-          gsap.set(".hero-section__logo-forest", { opacity: 1, y: 0 });
-          gsap.set(".hero-section__text-block", { opacity: 1, y: 0 });
-        }
-
-      }, 50); // ждём GSAP и ScrollSmoother
-    });
+    return () => {
+      // Убиваем только СВОИ триггеры
+      myTriggers.forEach((st) => st.kill());
+      gsap.killTweensOf(".hero-section__logo-forest");
+      gsap.killTweensOf(".hero-section__text-block");
+    };
   }, []);
 
   return (
     <section className="header">
-      <a href="#"><img src={logo}  className="menu__logo__center" alt="Логотип" /></a>
+      <a href="#">
+        <img src={logo} className="menu__logo__center" alt="Логотип" />
+      </a>
       <div className="layer">
         <p className="hero-section__text-block">Кьярда</p>
       </div>

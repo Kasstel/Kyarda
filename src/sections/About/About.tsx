@@ -11,12 +11,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 export default function ArticlesSection() {
   useEffect(() => {
     if (ScrollTrigger.isTouch !== 1) {
-      ScrollSmoother.create({
-        wrapper: ".wrapper",
-        content: ".content",
-        smooth: 1.5,
-        effects: true,
-      });
+      
 
       const articles = gsap.utils.toArray<HTMLElement>(".about__info-card");
 

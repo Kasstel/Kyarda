@@ -1,6 +1,6 @@
 # Component Documentation
 
-*Generated on 2026-03-11T12:12:07.039Z*
+*Generated on 2026-03-11T13:04:55.518Z*
 
 ---
 
@@ -26,19 +26,6 @@
 
 ---
 
-## StackingCards
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx`
-
-**Export:** Default
-
-### Hooks Used
-
-- `useEffect` (line 9)
-
-
----
-
 ## Modal
 
 **File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Modal/Modal.tsx`
@@ -48,6 +35,19 @@
 ### Hooks Used
 
 - `useModal` (line 7)
+- `useEffect` (line 9)
+
+
+---
+
+## StackingCards
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx`
+
+**Export:** Default
+
+### Hooks Used
+
 - `useEffect` (line 9)
 
 

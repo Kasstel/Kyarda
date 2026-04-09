@@ -1,17 +1,20 @@
+import { useCart } from "../Cart/Context/Context";
+import "./ProductCard.css"
 
-
-type typeBoard = "Сухая калиброванная 1-2 сорт" | "Сухая калиброванная 3 сорт" | "Обрезная (ест. вл) 2-3 сорт, длина 1200мм / 2400мм "
+export type typeBoard = "Сухая калиброванная 1-2 сорт" | "Сухая калиброванная 3 сорт" | "Обрезная (ест. вл) 2-3 сорт"
 
 
 export interface IProductCard{
   name: string,
   image: string,
-  salePrice: number,
-  firstPrice?: number,
-  typeBoard?: typeBoard,
-  thickness?: string,
-  width?: string,
-  description: string
+  salePrice?: number,
+  firstPrice: number,
+  typeBoard: typeBoard,
+  thickness: string,
+  width: string,
+  description: string,
+  priceDescription?:string,
+  length?: string
 }
 
 
@@ -22,21 +25,53 @@ export function ProductCard({
   typeBoard, 
   thickness, 
   width, 
-  description 
+  description,
+  image,
+  priceDescription,
+  length
 }: IProductCard){
 
+ const { dispatch } = useCart();
+
+ let price: number;
+  const addProduct = () => {
+    if (salePrice){
+      price = salePrice
+    }
+    else{price = firstPrice}
+  dispatch({
+    type: 'ADD',
+    payload: { name, image, price, typeBoard, thickness, width}
+  });
+};
   return (
     <div className="product-modal">
-      <h2>{name}</h2>
+        <div className="productBlock">
+          <div className="product-info">
+            <h2>{name}</h2>
+            <div className="product-info__block">
+            
+            {typeBoard && <p>Тип: {typeBoard}</p>}
 
-      <p>Цена: {salePrice} ₽</p>
-      <p>Старая цена: {firstPrice} ₽</p>
-      {typeBoard && <p>Тип: {typeBoard}</p>}
+            <p>Толщина: {thickness}</p>
+            <p>Ширина: {width}</p>
+            <p>{length}</p>
+            <p>{description}</p>
+            
+            <div className="pricing-block">
+              <span>Цена: <span className="price">{salePrice} </span>₽</span>
+              <p>Старая цена: <span className="old-price">{firstPrice} </span>₽</p>
+              <p className="price-description">{priceDescription}</p>
+            </div>
+           
+            </div>
+          
+          </div>
+          <img className="productCard-image" src={image} alt={name} />
 
-      <p>Толщина: {thickness}</p>
-      <p>Ширина: {width}</p>
+      </div>
 
-      <p>{description}</p>
+      <button className="form_button" onClick={addProduct}>Добавить в корзину</button>
     </div>
   );
 }

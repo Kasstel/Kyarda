@@ -26,8 +26,32 @@
 }
 
 @font-face {
-  font-family: 'Gloria';
-  src: url(./gloriascript.ttf) format('ttf');
+  font-family: 'Newsreader-Italic';
+  src: url(./NewsreaderCyr72pt-LightItalic.otf) format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  src: url(./NewsreaderCur72pt-Regular.otf) format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Volda';
+  src: url(./Vollda-Bold.otf) format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url(./WorkSansCyr-Regular.otf) format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans-bold';
+  src: url(./WorkSansCyr-Bold.otf) format('opentype');
   font-display: swap;
 }
 

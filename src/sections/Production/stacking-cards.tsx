@@ -63,8 +63,14 @@ export default function StackingCards() {
     })
 
 
-    return () => {
-  ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+   return () => {
+  // Убиваем только триггеры этой секции
+  ScrollTrigger.getAll()
+    .filter((st) => {
+      const trigger = st.vars.trigger;
+      return trigger && (trigger as HTMLElement).classList?.contains(styles["scroll-section"]);
+    })
+    .forEach((st) => st.kill());
 };
   }, []);
 

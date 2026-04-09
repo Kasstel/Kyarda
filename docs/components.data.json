@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-11T12:12:07.040Z",
+  "generatedAt": "2026-03-11T13:04:55.521Z",
   "components": [
     {
       "name": "ArticlesSection",
@@ -41,28 +41,6 @@
       "exportType": "default"
     },
     {
-      "name": "StackingCards",
-      "description": "",
-      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx",
-      "props": [],
-      "examples": [],
-      "dependencies": [
-        "react",
-        "gsap",
-        "gsap/ScrollTrigger",
-        "./stacking-card.module.scss",
-        "../../variables.css"
-      ],
-      "hooks": [
-        {
-          "name": "useEffect",
-          "line": 9
-        }
-      ],
-      "isExported": true,
-      "exportType": "default"
-    },
-    {
       "name": "Modal",
       "description": "",
       "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Modal/Modal.tsx",
@@ -86,6 +64,28 @@
       ],
       "isExported": true,
       "exportType": "named"
+    },
+    {
+      "name": "StackingCards",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "gsap",
+        "gsap/ScrollTrigger",
+        "./stacking-card.module.scss",
+        "../../variables.css"
+      ],
+      "hooks": [
+        {
+          "name": "useEffect",
+          "line": 9
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
     }
   ]
 }
