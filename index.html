@@ -7,8 +7,23 @@
     <link rel="preload" as="image" href="/Kyarda/images/logo__forest2.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кьярда - завод пиломатериалов</title>
-    <script type="module" crossorigin src="/Kyarda/assets/index-BOp8tXBl.js"></script>
-    <link rel="stylesheet" crossorigin href="/Kyarda/assets/index-Bc6fddkA.css">
+    <style>
+    .wrapper { 
+      opacity: 0; 
+    }
+    @keyframes force-show {
+      to { opacity: 1; }
+    }
+    .wrapper {
+      animation: force-show 0s 3s forwards;
+    }
+    .wrapper--ready {
+      animation: none;
+      opacity: 1;
+    }
+  </style>
+    <script type="module" crossorigin src="/Kyarda/assets/index-70sQonFy.js"></script>
+    <link rel="stylesheet" crossorigin href="/Kyarda/assets/index-DTQPsZrt.css">
   </head>
   <body>
     <div id="root"></div>
