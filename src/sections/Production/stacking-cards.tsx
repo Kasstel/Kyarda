@@ -98,7 +98,7 @@ export default function StackingCards() {
                 </p>
               </div>
             </div>
-            <img src={`${import.meta.env.BASE_URL}images/vyrubka.png`}  className={styles["card__media"]}></img>
+            <img src={`${import.meta.env.BASE_URL}images/vyrubka.webp`}  className={styles["card__media"]} loading="lazy"></img>
           </div>
           <div role='list-item' className={styles["card"]}>
             <div className={styles["card__content"]}>
@@ -113,7 +113,7 @@ export default function StackingCards() {
                 </p>
               </div>
             </div>
-            <img src={`${import.meta.env.BASE_URL}images/raspilovka.png`}  className={styles["card__media"]}></img>
+            <img src={`${import.meta.env.BASE_URL}images/raspilovka.webp`}  className={styles["card__media"]} loading="lazy"></img>
           </div>
           <div role='list-item' className={styles["card"]}>
             <div className={styles["card__content"]}>
@@ -128,7 +128,7 @@ export default function StackingCards() {
                 </p>
               </div>
             </div>
-            <img src={`${import.meta.env.BASE_URL}images/sycshka.png`}  className={styles["card__media"]}></img>
+            <img src={`${import.meta.env.BASE_URL}images/sycshka.webp`}  className={styles["card__media"]} loading="lazy"></img>
           </div>
           <div role='list-item' className={styles["card"]}>
             <div className={styles["card__content"]}>
@@ -142,7 +142,7 @@ export default function StackingCards() {
                 </p>
               </div>
             </div>
-            <img src={`${import.meta.env.BASE_URL}images/stroganie.png`}  className={styles["card__media"]}></img>
+            <img src={`${import.meta.env.BASE_URL}images/stroganie.webp`}  className={styles["card__media"]} loading="lazy"></img>
           </div>
           <div role='list-item' className={styles["card"]}>
             <div className={styles["card__content"]}>
@@ -161,7 +161,7 @@ export default function StackingCards() {
                 </p>
               </div>
             </div>
-            <img src={`${import.meta.env.BASE_URL}images/xranenie.png`}  className={styles["card__media"]}></img>
+            <img src={`${import.meta.env.BASE_URL}images/xranenie.webp`}  className={styles["card__media"]} loading="lazy"></img>
           </div>
           <div role='list-item' className={styles["card"]}>
             <div className={styles["card__content"]}>
@@ -175,7 +175,7 @@ export default function StackingCards() {
                 </p>
               </div>
             </div>
-            <img src={`${import.meta.env.BASE_URL}images/transport.png`}  className={styles["card__media"]}></img>
+            <img src={`${import.meta.env.BASE_URL}images/transport.webp`}  className={styles["card__media"]} loading="lazy"></img>
           </div>
           <div role='list-item' className={styles["card"]}>
             <div className={styles["card__content"]}>
@@ -188,7 +188,7 @@ export default function StackingCards() {
                 </p>
               </div>
             </div>
-            <img src={`${import.meta.env.BASE_URL}images/komplect.png`}  className={styles["card__media"]}></img>
+            <img src={`${import.meta.env.BASE_URL}images/komplect.webp`}  className={styles["card__media"]} loading="lazy"></img>
           </div>
           <div role='list-item' className={styles["card"]}>
             <div className={styles["card__content"]}>
@@ -201,7 +201,7 @@ export default function StackingCards() {
                 </p>
               </div>
             </div>
-            <img src={`${import.meta.env.BASE_URL}images/dostavka.png`}  className={styles["card__media"]}></img>
+            <img src={`${import.meta.env.BASE_URL}images/dostavka.webp`}  className={styles["card__media"]}></img>
           </div>
         </div>
       </div>

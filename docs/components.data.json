@@ -1,6 +1,49 @@
 {
-  "generatedAt": "2026-03-11T13:04:55.521Z",
+  "generatedAt": "2026-04-09T15:34:03.873Z",
   "components": [
+    {
+      "name": "App",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/App.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "./App.css",
+        "./assets/fonts/fonts.css",
+        "./variables.css",
+        "./js-functions/parallax.ts",
+        "react",
+        "gsap",
+        "gsap/ScrollTrigger",
+        "lenis",
+        "lenis/dist/lenis.css",
+        "./sections/About/About.tsx",
+        "./sections/Production/stacking-cards.tsx",
+        "./sections/Header/Header.tsx",
+        "./sections/Experience/Experience.tsx",
+        "./sections/Menu/Menu.tsx",
+        "./sections/Mission/Mission.tsx",
+        "./sections/Products/Products.tsx",
+        "./sections/Geo/Geo.tsx",
+        "./sections/Footer/Footer.tsx",
+        "./widgets/ModalContext/ModalContext.tsx",
+        "./widgets/Modal/Modal.tsx",
+        "./widgets/Cart/CartPreview.tsx",
+        "./widgets/Cart/Context/Context.tsx"
+      ],
+      "hooks": [
+        {
+          "name": "useState",
+          "line": 28
+        },
+        {
+          "name": "useEffect",
+          "line": 30
+        }
+      ],
+      "isExported": false,
+      "exportType": "named"
+    },
     {
       "name": "ArticlesSection",
       "description": "",
@@ -26,6 +69,77 @@
       "exportType": "default"
     },
     {
+      "name": "Cart",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/Cart.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "./Context/Context",
+        "./Cart.css",
+        "./Cart.types"
+      ],
+      "hooks": [
+        {
+          "name": "useCart",
+          "line": 8
+        }
+      ],
+      "isExported": true,
+      "exportType": "named"
+    },
+    {
+      "name": "CartPreview",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/CartPreview.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "../ModalContext/ModalContext",
+        "./Cart.css",
+        "./Context/Context"
+      ],
+      "hooks": [
+        {
+          "name": "useModal",
+          "line": 11
+        },
+        {
+          "name": "useCart",
+          "line": 12
+        }
+      ],
+      "isExported": true,
+      "exportType": "named"
+    },
+    {
+      "name": "CartProvider",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/Context/Context.tsx",
+      "props": [
+        {
+          "name": "children",
+          "type": "any",
+          "required": true,
+          "description": ""
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "../Cart.types",
+        "./Reducer"
+      ],
+      "hooks": [
+        {
+          "name": "useReducer",
+          "line": 19
+        }
+      ],
+      "isExported": true,
+      "exportType": "named"
+    },
+    {
       "name": "Footer",
       "description": "",
       "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx",
@@ -41,6 +155,55 @@
       "exportType": "default"
     },
     {
+      "name": "Header",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Header/Header.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "gsap",
+        "gsap/ScrollTrigger",
+        "/images/logo.png"
+      ],
+      "hooks": [
+        {
+          "name": "useEffect",
+          "line": 8
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Menu",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Menu/Menu.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "/images/logo.png",
+        "gsap",
+        "gsap/all",
+        "../../App.css",
+        "../../widgets/Cart/CartPreview",
+        "../../widgets/Cart/Context/Context"
+      ],
+      "hooks": [
+        {
+          "name": "useEffect",
+          "line": 10
+        },
+        {
+          "name": "useCart",
+          "line": 15
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
       "name": "Modal",
       "description": "",
       "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Modal/Modal.tsx",
@@ -50,16 +213,97 @@
         "react",
         "../ModalContext/ModalContext",
         "../ProductCard/ProductCard",
-        "./Modal.css"
+        "./Modal.css",
+        "../Cart/Cart"
       ],
       "hooks": [
         {
           "name": "useModal",
-          "line": 7
+          "line": 8
         },
         {
           "name": "useEffect",
-          "line": 9
+          "line": 10
+        }
+      ],
+      "isExported": true,
+      "exportType": "named"
+    },
+    {
+      "name": "ProductCard",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/ProductCard/ProductCard.tsx",
+      "props": [
+        {
+          "name": "name",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "salePrice",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "firstPrice",
+          "type": "number",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "typeBoard",
+          "type": "typeBoard",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "thickness",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "priceDescription",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "length",
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "../Cart/Context/Context",
+        "./ProductCard.css"
+      ],
+      "hooks": [
+        {
+          "name": "useCart",
+          "line": 34
         }
       ],
       "isExported": true,

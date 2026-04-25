@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import logo from "/images/logo.png";
+import logo from "/images/logo.webp";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/all";
 import "../../App.css";

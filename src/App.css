@@ -149,7 +149,7 @@
 }
 
 .hero-section__logo-forest{
-  background-image: url('/images/logo__forest2.PNG');
+  background-image: url('/images/logo__forest2.webp');
   height: 100vh;
   margin-top: 50px;
   z-index: 2;
@@ -215,7 +215,7 @@
   aspect-ratio: 1 / 1;
   justify-self: center;
   border-radius: 30px;
-  background-image: url('/images/avatarka.jpg');
+  background-image: url('/images/avatarka.webp');
   background-size: cover;
 }
 
@@ -416,19 +416,19 @@
 }
 
 .ecology{
-  background-image: url('/images/ecology.jpg');
+  background-image: url('/images/ecology.webp');
 }
 
 .quality{
-  background-image: url('/images/quality.jpg');
+  background-image: url('/images/quality.webp');
 }
 
 .professional{
-  background-image: url('/images/professional.jpg');
+  background-image: url('/images/professional.webp');
 }
 
 .individual{
-  background-image: url('/images/individual.jpg');
+  background-image: url('/images/individual.webp');
   filter: brightness(.4);
 }
 

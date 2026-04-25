@@ -2,10 +2,9 @@ import './App.css'
 import './assets/fonts/fonts.css'
 import './variables.css'
 import { initParallax } from './js-functions/parallax.ts'
-import { useEffect, useState, useLayoutEffect } from 'react';
+import { useEffect, useState } from 'react';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 
 import ArticlesSection from './sections/About/About.tsx';
@@ -19,7 +18,6 @@ import Geo from './sections/Geo/Geo.tsx';
 import Footer from './sections/Footer/Footer.tsx';
 import { ModalProvider } from './widgets/ModalContext/ModalContext.tsx';
 import { Modal } from './widgets/Modal/Modal.tsx';
-import { CartPreview } from './widgets/Cart/CartPreview.tsx';
 import { CartProvider } from './widgets/Cart/Context/Context.tsx';
 
 gsap.registerPlugin(ScrollTrigger);

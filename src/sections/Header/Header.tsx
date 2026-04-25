@@ -40,7 +40,7 @@ export default function Header() {
         end: "bottom top",
         scrub: true,
         animation: gsap.to(".hero-section__text-block", {
-          yPercent: -30,
+          yPercent: -50,
           ease: "none",
         }),
       });
@@ -48,7 +48,7 @@ export default function Header() {
     } else {
       // Просто ставим статичное состояние, НЕ убиваем чужие триггеры
       gsap.set(".hero-section__logo-forest", { opacity: 1, y: 0 });
-      gsap.set(".hero-section__text-block", { opacity: 1, y: 0 });
+      gsap.set(".hero-section__text-block", { opacity: 1, y: -100 });
     }
 
     return () => {

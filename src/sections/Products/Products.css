@@ -112,11 +112,11 @@
 }
 
 .prof__pilo{
-  background-image: url('/images/prof__pilo.png');
+  background-image: url('/images/prof__pilo.webp');
   background-size: cover;
 }
 
 .kalibr__pilo{
-  background-image: url('/images/kalibr__pilo.png');
+  background-image: url('/images/kalibr__pilo.webp');
   background-size: cover; 
 }
