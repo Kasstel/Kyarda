@@ -6,13 +6,50 @@
 }
 
 
+/* Всегда показываем скроллбар чтобы лейаут не прыгал */
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+
+.wrapper {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.wrapper--ready {
+  opacity: 1;
+}
+
 .header{
   height: 100vh;
   position: relative;
   overflow: hidden; 
 }
 
+.preloader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  z-index: 9999;
+}
 
+.preloader__spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255,255,255,0.1);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
 
 .menu{
   background: rgba(255, 255, 255, 0.253);

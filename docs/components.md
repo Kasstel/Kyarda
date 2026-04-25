@@ -1,6 +1,6 @@
 # Component Documentation
 
-*Generated on 2026-04-09T15:34:03.871Z*
+*Generated on 2026-04-25T21:09:13.781Z*
 
 ---
 
@@ -12,8 +12,8 @@
 
 ### Hooks Used
 
-- `useState` (line 28)
-- `useEffect` (line 30)
+- `useState` (line 26)
+- `useEffect` (line 28)
 
 
 ---

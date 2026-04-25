@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T15:34:03.873Z",
+  "generatedAt": "2026-04-25T21:09:13.783Z",
   "components": [
     {
       "name": "App",
@@ -15,7 +15,6 @@
         "react",
         "gsap",
         "gsap/ScrollTrigger",
-        "lenis",
         "lenis/dist/lenis.css",
         "./sections/About/About.tsx",
         "./sections/Production/stacking-cards.tsx",
@@ -28,17 +27,16 @@
         "./sections/Footer/Footer.tsx",
         "./widgets/ModalContext/ModalContext.tsx",
         "./widgets/Modal/Modal.tsx",
-        "./widgets/Cart/CartPreview.tsx",
         "./widgets/Cart/Context/Context.tsx"
       ],
       "hooks": [
         {
           "name": "useState",
-          "line": 28
+          "line": 26
         },
         {
           "name": "useEffect",
-          "line": 30
+          "line": 28
         }
       ],
       "isExported": false,
@@ -183,7 +181,7 @@
       "examples": [],
       "dependencies": [
         "react",
-        "/images/logo.png",
+        "/images/logo.webp",
         "gsap",
         "gsap/all",
         "../../App.css",

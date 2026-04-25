@@ -7,6 +7,21 @@
     <link rel="preload" as="image" href="/images/logo__forest2.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кьярда - завод пиломатериалов</title>
+    <style>
+    .wrapper { 
+      opacity: 0; 
+    }
+    @keyframes force-show {
+      to { opacity: 1; }
+    }
+    .wrapper {
+      animation: force-show 0s 3s forwards;
+    }
+    .wrapper--ready {
+      animation: none;
+      opacity: 1;
+    }
+  </style>
   </head>
   <body>
     <div id="root"></div>

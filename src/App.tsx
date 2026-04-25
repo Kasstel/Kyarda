@@ -54,15 +54,17 @@ function App() {
     <>
       <CartProvider>
         <ModalProvider>
+          {!ready && (
+          <div className="preloader">
+            <div className="preloader__spinner" />
+          </div>
+          )}
           <header>
             <Menu />
           </header>
+
           <div
-            className="wrapper"
-            style={{
-              opacity: ready ? 1 : 0,
-              transition: "opacity .3s ease",
-            }}
+            className={`wrapper ${ready ? "wrapper--ready" : ""}`}
           >
             <div className="content">
               <Header />

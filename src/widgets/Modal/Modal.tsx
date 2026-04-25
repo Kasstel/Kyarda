@@ -10,12 +10,15 @@ export function Modal(){
   useEffect(() => {
     if (modalType) {
       document.body.style.overflow = "hidden";   // 🔒 блокируем скролл
+      document.documentElement.style.scrollbarGutter = "stable";
     } else {
       document.body.style.overflow = "auto";     // 🔓 возвращаем скролл
+      document.documentElement.style.scrollbarGutter = "";
     }
 
     return () => {
       document.body.style.overflow = "auto";     // На всякий случай при размонтировании
+      document.documentElement.style.scrollbarGutter = "";
     };
   }, [modalType]);
  
