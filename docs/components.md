@@ -1,6 +1,6 @@
 # Component Documentation
 
-*Generated on 2026-05-02T17:46:24.538Z*
+*Generated on 2026-05-02T18:23:17.090Z*
 
 ---
 
@@ -27,91 +27,6 @@
 ### Hooks Used
 
 - `useEffect` (line 12)
-
-
----
-
-## Experience
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Experience/Experience.tsx`
-
-**Export:** Default
-
-
----
-
-## Footer
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx`
-
-**Export:** Default
-
-
----
-
-## Geo
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Geo/Geo.tsx`
-
-**Export:** Default
-
-
----
-
-## Header
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Header/Header.tsx`
-
-**Export:** Default
-
-### Hooks Used
-
-- `useEffect` (line 8)
-
-
----
-
-## Menu
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Menu/Menu.tsx`
-
-**Export:** Default
-
-### Hooks Used
-
-- `useEffect` (line 10)
-- `useCart` (line 15)
-
-
----
-
-## Mission
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Mission/Mission.tsx`
-
-**Export:** Default
-
-
----
-
-## StackingCards
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx`
-
-**Export:** Default
-
-### Hooks Used
-
-- `useEffect` (line 9)
-
-
----
-
-## Products
-
-**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Products/Products.tsx`
-
-**Export:** Default
 
 
 ---
@@ -146,6 +61,53 @@
 - `useEffect` (line 51)
 - `useMemo` (line 66)
 - `useMemo` (line 72)
+
+
+---
+
+## Cart
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/Cart.tsx`
+
+**Export:** Named
+
+### Hooks Used
+
+- `useModal` (line 9)
+- `useCart` (line 10)
+
+
+---
+
+## CartPreview
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/CartPreview.tsx`
+
+**Export:** Named
+
+### Hooks Used
+
+- `useModal` (line 11)
+- `useCart` (line 12)
+
+
+---
+
+## CartProvider
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/Context/Context.tsx`
+
+**Export:** Named
+
+### Props
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| children | `any` | ✅ | - | - |
+
+### Hooks Used
+
+- `useReducer` (line 19)
 
 
 ---
@@ -221,67 +183,65 @@
 
 ---
 
-## ShinyText
+## Experience
 
-**File:** `C:/Users/kasstel/dev/Kyarda/src/UI-features/ShinyText/ShinyText.tsx`
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Experience/Experience.tsx`
 
-**Export:** Named
-
-### Props
-
-| Name | Type | Required | Default | Description |
-|------|------|----------|---------|-------------|
-| text | `string` | ✅ | - | - |
-| disabled | `boolean` | ❌ | - | - |
-| speed | `number` | ❌ | - | - |
-| className | `string` | ❌ | - | - |
+**Export:** Default
 
 
 ---
 
-## Cart
+## Footer
 
-**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/Cart.tsx`
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx`
 
-**Export:** Named
-
-### Hooks Used
-
-- `useModal` (line 8)
-- `useCart` (line 9)
+**Export:** Default
 
 
 ---
 
-## CartPreview
+## Geo
 
-**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/CartPreview.tsx`
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Geo/Geo.tsx`
 
-**Export:** Named
-
-### Hooks Used
-
-- `useModal` (line 11)
-- `useCart` (line 12)
+**Export:** Default
 
 
 ---
 
-## CartProvider
+## Header
 
-**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/Context/Context.tsx`
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Header/Header.tsx`
 
-**Export:** Named
-
-### Props
-
-| Name | Type | Required | Default | Description |
-|------|------|----------|---------|-------------|
-| children | `any` | ✅ | - | - |
+**Export:** Default
 
 ### Hooks Used
 
-- `useReducer` (line 19)
+- `useEffect` (line 8)
+
+
+---
+
+## Menu
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Menu/Menu.tsx`
+
+**Export:** Default
+
+### Hooks Used
+
+- `useEffect` (line 10)
+- `useCart` (line 15)
+
+
+---
+
+## Mission
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Mission/Mission.tsx`
+
+**Export:** Default
 
 
 ---
@@ -381,6 +341,46 @@
 ### Hooks Used
 
 - `useModal` (line 8)
+
+
+---
+
+## Products
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Products/Products.tsx`
+
+**Export:** Default
+
+
+---
+
+## ShinyText
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/UI-features/ShinyText/ShinyText.tsx`
+
+**Export:** Named
+
+### Props
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| text | `string` | ✅ | - | - |
+| disabled | `boolean` | ❌ | - | - |
+| speed | `number` | ❌ | - | - |
+| className | `string` | ❌ | - | - |
+
+
+---
+
+## StackingCards
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx`
+
+**Export:** Default
+
+### Hooks Used
+
+- `useEffect` (line 9)
 
 
 ---

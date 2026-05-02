@@ -7,7 +7,6 @@ import { useState } from "react";
 
 export function Cart(){
   const {openModal} = useModal();
-  const {cartOpen, setCartOpen} = useState(false);
   const {items,dispatch} = useCart();
   const removeCart = ()=>{
     dispatch({
