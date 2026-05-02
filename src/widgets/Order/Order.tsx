@@ -8,7 +8,7 @@ export function OrderForm() {
     <form onSubmit={handleSubmit}>
       <input placeholder="Введите имя" />
       <input placeholder="Введите фамилию" />
-      <button type="submit">Сделать заказ бич</button>
+      <button type="submit">Сделать заказ</button>
     </form>
   )
 }

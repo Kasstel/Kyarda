@@ -2,10 +2,12 @@ import { useCart } from "./Context/Context"
 import './Cart.css'
 import type { ICartItem } from "./Cart.types";
 import { useModal } from "../ModalContext/ModalContext";
+import { useState } from "react";
 
 
 export function Cart(){
   const {openModal} = useModal();
+  const {cartOpen, setCartOpen} = useState(false);
   const {items,dispatch} = useCart();
   const removeCart = ()=>{
     dispatch({
