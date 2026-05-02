@@ -85,7 +85,7 @@ export function Cart(){
         </article>
       )})}
       <div className="form-block">
-        <button className="form_button" onClick={()=>{openModal('order')}}>Оформить заказ</button>
+        <button className="form_button" onClick={()=>{openModal('order')}}>Оформить заказз</button>
       </div>
     </div>
     </>
