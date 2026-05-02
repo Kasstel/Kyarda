@@ -3,6 +3,7 @@ import { useModal } from "../ModalContext/ModalContext"
 import { ProductCard } from "../ProductCard/ProductCard"
 import "./Modal.css"
 import { Cart } from "../Cart/Cart"
+import { OrderForm } from "../Order/Order"
 
 export function Modal(){
   const {modalType, modalData, closeModal} = useModal()
@@ -29,6 +30,7 @@ export function Modal(){
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         {modalType === "product" && <ProductCard {...modalData} />}
         {modalType === "cart" && <Cart/>}
+        {modalType === "order" && <OrderForm/>}
       </div>
     </div>
   )

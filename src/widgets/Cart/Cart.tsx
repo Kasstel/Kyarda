@@ -1,10 +1,11 @@
 import { useCart } from "./Context/Context"
 import './Cart.css'
 import type { ICartItem } from "./Cart.types";
+import { useModal } from "../ModalContext/ModalContext";
 
 
 export function Cart(){
-  
+  const {openModal} = useModal();
   const {items,dispatch} = useCart();
   const removeCart = ()=>{
     dispatch({
@@ -31,6 +32,8 @@ export function Cart(){
       }
     })
   }
+
+  
 
   return(
     <>
@@ -82,7 +85,7 @@ export function Cart(){
         </article>
       )})}
       <div className="form-block">
-        <button className="form_button">Оформить заказ</button>
+        <button className="form_button" onClick={()=>{openModal('order')}}>Оформить заказ</button>
       </div>
     </div>
     </>

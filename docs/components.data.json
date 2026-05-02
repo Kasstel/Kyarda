@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T21:09:13.783Z",
+  "generatedAt": "2026-05-02T17:46:24.539Z",
   "components": [
     {
       "name": "App",
@@ -67,6 +67,507 @@
       "exportType": "default"
     },
     {
+      "name": "Experience",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Experience/Experience.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "../../App.css"
+      ],
+      "hooks": [],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Footer",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "../../UI-features/BlurText/BlurText",
+        "../../UI-features/LogoLoop/LogoLoop",
+        "./Footer.css"
+      ],
+      "hooks": [],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Geo",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Geo/Geo.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "./Geo.css"
+      ],
+      "hooks": [],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Header",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Header/Header.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "gsap",
+        "gsap/ScrollTrigger",
+        "/images/logo.png"
+      ],
+      "hooks": [
+        {
+          "name": "useEffect",
+          "line": 8
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Menu",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Menu/Menu.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "/images/logo.webp",
+        "gsap",
+        "gsap/all",
+        "../../App.css",
+        "../../widgets/Cart/CartPreview",
+        "../../widgets/Cart/Context/Context"
+      ],
+      "hooks": [
+        {
+          "name": "useEffect",
+          "line": 10
+        },
+        {
+          "name": "useCart",
+          "line": 15
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Mission",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Mission/Mission.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "../../UI-features/ShinyText/ShinyText"
+      ],
+      "hooks": [],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "StackingCards",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "gsap",
+        "gsap/ScrollTrigger",
+        "./stacking-card.module.scss",
+        "../../variables.css"
+      ],
+      "hooks": [
+        {
+          "name": "useEffect",
+          "line": 9
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "Products",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Products/Products.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "../../App.css",
+        "../../assets/data/products",
+        "../../widgets/ProductCard/ProductCardPreview",
+        "./Products.css"
+      ],
+      "hooks": [],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "BlurText",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/UI-features/BlurText/BlurText.tsx",
+      "props": [
+        {
+          "name": "text",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "animateBy",
+          "type": "\"words\" | \"letters\"",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "\"top\" | \"bottom\"",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "threshold",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "rootMargin",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "animationFrom",
+          "type": "Record<string, string | number>",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "animationTo",
+          "type": "Record<string, string | number>[]",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "easing",
+          "type": "(t: number) => number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "onAnimationComplete",
+          "type": "() => void",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "stepDuration",
+          "type": "number",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "motion/react",
+        "motion/react",
+        "react"
+      ],
+      "hooks": [
+        {
+          "name": "useState",
+          "line": 48
+        },
+        {
+          "name": "useRef",
+          "line": 49
+        },
+        {
+          "name": "useEffect",
+          "line": 51
+        },
+        {
+          "name": "useMemo",
+          "line": 66
+        },
+        {
+          "name": "useMemo",
+          "line": 72
+        }
+      ],
+      "isExported": false,
+      "exportType": "named"
+    },
+    {
+      "name": "CountUp",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/UI-features/CountUp/CountUp.tsx",
+      "props": [
+        {
+          "name": "to",
+          "type": "number",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "from",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "\"up\" | \"down\"",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "delay",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "duration",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "startWhen",
+          "type": "boolean",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "separator",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "onStart",
+          "type": "() => void",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "onEnd",
+          "type": "() => void",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "motion/react"
+      ],
+      "hooks": [
+        {
+          "name": "useRef",
+          "line": 29
+        },
+        {
+          "name": "useMotionValue",
+          "line": 30
+        },
+        {
+          "name": "useSpring",
+          "line": 35
+        },
+        {
+          "name": "useInView",
+          "line": 40
+        },
+        {
+          "name": "useEffect",
+          "line": 55
+        },
+        {
+          "name": "useEffect",
+          "line": 61
+        },
+        {
+          "name": "useEffect",
+          "line": 87
+        }
+      ],
+      "isExported": true,
+      "exportType": "default"
+    },
+    {
+      "name": "CurvedLoop",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/UI-features/Questions/Question.tsx",
+      "props": [
+        {
+          "name": "marqueeText",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "speed",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "curveAmount",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "direction",
+          "type": "\"left\" | \"right\"",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "interactive",
+          "type": "boolean",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "react",
+        "./Questions.css"
+      ],
+      "hooks": [
+        {
+          "name": "useMemo",
+          "line": 22
+        },
+        {
+          "name": "useRef",
+          "line": 27
+        },
+        {
+          "name": "useRef",
+          "line": 28
+        },
+        {
+          "name": "useRef",
+          "line": 29
+        },
+        {
+          "name": "useState",
+          "line": 30
+        },
+        {
+          "name": "useState",
+          "line": 31
+        },
+        {
+          "name": "useId",
+          "line": 32
+        },
+        {
+          "name": "useRef",
+          "line": 36
+        },
+        {
+          "name": "useRef",
+          "line": 37
+        },
+        {
+          "name": "useRef",
+          "line": 38
+        },
+        {
+          "name": "useRef",
+          "line": 39
+        },
+        {
+          "name": "useEffect",
+          "line": 49
+        },
+        {
+          "name": "useEffect",
+          "line": 53
+        },
+        {
+          "name": "useEffect",
+          "line": 62
+        }
+      ],
+      "isExported": false,
+      "exportType": "named"
+    },
+    {
+      "name": "ShinyText",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/UI-features/ShinyText/ShinyText.tsx",
+      "props": [
+        {
+          "name": "text",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "speed",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "./ShinyText.css"
+      ],
+      "hooks": [],
+      "isExported": false,
+      "exportType": "named"
+    },
+    {
       "name": "Cart",
       "description": "",
       "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Cart/Cart.tsx",
@@ -75,12 +576,17 @@
       "dependencies": [
         "./Context/Context",
         "./Cart.css",
-        "./Cart.types"
+        "./Cart.types",
+        "../ModalContext/ModalContext"
       ],
       "hooks": [
         {
-          "name": "useCart",
+          "name": "useModal",
           "line": 8
+        },
+        {
+          "name": "useCart",
+          "line": 9
         }
       ],
       "isExported": true,
@@ -138,70 +644,6 @@
       "exportType": "named"
     },
     {
-      "name": "Footer",
-      "description": "",
-      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx",
-      "props": [],
-      "examples": [],
-      "dependencies": [
-        "../../UI-features/BlurText/BlurText",
-        "../../UI-features/LogoLoop/LogoLoop",
-        "./Footer.css"
-      ],
-      "hooks": [],
-      "isExported": true,
-      "exportType": "default"
-    },
-    {
-      "name": "Header",
-      "description": "",
-      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Header/Header.tsx",
-      "props": [],
-      "examples": [],
-      "dependencies": [
-        "react",
-        "gsap",
-        "gsap/ScrollTrigger",
-        "/images/logo.png"
-      ],
-      "hooks": [
-        {
-          "name": "useEffect",
-          "line": 8
-        }
-      ],
-      "isExported": true,
-      "exportType": "default"
-    },
-    {
-      "name": "Menu",
-      "description": "",
-      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Menu/Menu.tsx",
-      "props": [],
-      "examples": [],
-      "dependencies": [
-        "react",
-        "/images/logo.webp",
-        "gsap",
-        "gsap/all",
-        "../../App.css",
-        "../../widgets/Cart/CartPreview",
-        "../../widgets/Cart/Context/Context"
-      ],
-      "hooks": [
-        {
-          "name": "useEffect",
-          "line": 10
-        },
-        {
-          "name": "useCart",
-          "line": 15
-        }
-      ],
-      "isExported": true,
-      "exportType": "default"
-    },
-    {
       "name": "Modal",
       "description": "",
       "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Modal/Modal.tsx",
@@ -212,18 +654,59 @@
         "../ModalContext/ModalContext",
         "../ProductCard/ProductCard",
         "./Modal.css",
-        "../Cart/Cart"
+        "../Cart/Cart",
+        "../Order/Order"
       ],
       "hooks": [
         {
           "name": "useModal",
-          "line": 8
+          "line": 9
         },
         {
           "name": "useEffect",
-          "line": 10
+          "line": 11
         }
       ],
+      "isExported": true,
+      "exportType": "named"
+    },
+    {
+      "name": "ModalProvider",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/ModalContext/ModalContext.tsx",
+      "props": [
+        {
+          "name": "children",
+          "type": "any",
+          "required": true,
+          "description": ""
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "react"
+      ],
+      "hooks": [
+        {
+          "name": "useState",
+          "line": 17
+        },
+        {
+          "name": "useState",
+          "line": 18
+        }
+      ],
+      "isExported": true,
+      "exportType": "named"
+    },
+    {
+      "name": "OrderForm",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Order/Order.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [],
+      "hooks": [],
       "isExported": true,
       "exportType": "named"
     },
@@ -308,26 +791,86 @@
       "exportType": "named"
     },
     {
-      "name": "StackingCards",
+      "name": "ProductCardPreview",
       "description": "",
-      "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Production/stacking-cards.tsx",
-      "props": [],
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/ProductCard/ProductCardPreview.tsx",
+      "props": [
+        {
+          "name": "name",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "salePrice",
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "firstPrice",
+          "type": "number",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "typeBoard",
+          "type": "typeBoard",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "thickness",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        {
+          "name": "priceDescription",
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        {
+          "name": "length",
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      ],
       "examples": [],
       "dependencies": [
-        "react",
-        "gsap",
-        "gsap/ScrollTrigger",
-        "./stacking-card.module.scss",
-        "../../variables.css"
+        "../ModalContext/ModalContext",
+        "./ProductCard",
+        "../../sections/Products/Products.css",
+        "../../App.css"
       ],
       "hooks": [
         {
-          "name": "useEffect",
-          "line": 9
+          "name": "useModal",
+          "line": 8
         }
       ],
       "isExported": true,
-      "exportType": "default"
+      "exportType": "named"
     }
   ]
 }
