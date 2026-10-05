@@ -4,6 +4,7 @@ import { ProductCard } from "../ProductCard/ProductCard"
 import "./Modal.css"
 import { Cart } from "../Cart/Cart"
 import { OrderForm } from "../Order/Order"
+import { OrderSuccess } from "../Order/OrderSuccess"
 
 export function Modal(){
   const {modalType, modalData, closeModal} = useModal()
@@ -31,6 +32,7 @@ export function Modal(){
         {modalType === "product" && <ProductCard {...modalData} />}
         {modalType === "cart" && <Cart/>}
         {modalType === "order" && <OrderForm/>}
+        {modalType === "success" && <OrderSuccess/>}
       </div>
     </div>
   )

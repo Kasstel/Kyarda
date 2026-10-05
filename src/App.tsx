@@ -21,6 +21,8 @@ import { Modal } from './widgets/Modal/Modal.tsx';
 import { CartProvider } from './widgets/Cart/Context/Context.tsx';
 
 gsap.registerPlugin(ScrollTrigger);
+// На телефонах адресная строка меняет высоту окна при скролле — не пересчитываем триггеры из-за этого
+ScrollTrigger.config({ ignoreMobileResize: true });
 
 function App() {
   const [ready, setReady] = useState(false);

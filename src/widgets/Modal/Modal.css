@@ -14,4 +14,16 @@
   border-radius: 12px;
   max-width: 600px;
   width: 90%;
+  /* Длинное содержимое (корзина, форма) скроллится внутри окна */
+  max-height: 90vh;
+  max-height: 90dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+@media (width<=600px) {
+  .modal-content {
+    width: calc(100% - 24px);
+    padding: 16px;
+  }
 }

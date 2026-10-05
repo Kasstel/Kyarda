@@ -90,8 +90,12 @@ html {
 
 .nav-item{
   font-family: var(--normal-f);
-  font-size: clamp(10px, 8.00px + 0.63vw, 20px);
+  font-size: clamp(16px, 8.00px + 0.63vw, 20px);
   text-shadow: 1px 1px 1px rgb(37, 57, 53, 1);
+}
+
+.menu__burger{
+  display: none;
 }
 
 .text-link{
@@ -133,6 +137,102 @@ html {
 
   .menu__logo{
     top: 2rem;
+  }
+}
+
+/* Мобильное меню: верхняя панель с логотипом, кнопкой-бургером и выпадающим списком.
+   Панель нужна, чтобы контент при скролле не проезжал под логотипом и кнопкой */
+@media (width<=768px) {
+  .menu{
+    width: 100%;
+    height: 64px;
+    left: 0;
+    top: 0;
+    padding: 0 0.75rem;
+    justify-content: flex-end;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    background: rgba(20, 41, 39, 0.75);
+    z-index: 20;
+  }
+
+  .menu__burger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .menu__burger-line{
+    width: 22px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--menu-item-color);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .menu--open .menu__burger-line:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu--open .menu__burger-line:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu--open .menu__burger-line:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .nav-list{
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0.75rem;
+    width: min(260px, calc(100vw - 2rem));
+    flex-direction: column;
+    padding: 0.5rem;
+    background: rgba(20, 41, 39, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  }
+
+  .menu--open .nav-list{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-item{
+    font-size: 18px;
+    text-shadow: none;
+  }
+
+  .nav-item .text-link{
+    display: block;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+  }
+
+  .nav-item .text-link:active{
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .menu__logo{
+    top: 11px;
+    width: 52px;
+    z-index: 21;
   }
 }
 
@@ -518,6 +618,62 @@ html {
 
 .experience-card:hover .experience-card__paragraph{
   opacity: 1;
+}
+
+/* На тач-экранах нет hover — текст карточек показываем сразу */
+@media (hover: none) {
+  .experience-card__paragraph,
+  .card-overlay{
+    opacity: 1;
+  }
+
+  .experience-card__background{
+    filter: brightness(0.4);
+  }
+
+  /* Светлая картинка с текстом отзывов — затемняем сильнее, чтобы не спорила с подписью */
+  .individual{
+    filter: brightness(0.2);
+  }
+}
+
+@media (width<=600px) {
+  .text{
+    font-size: 16px;
+  }
+
+  .about__info-card{
+    padding: 0.75rem;
+  }
+
+  .special-text{
+    font-size: 19px;
+  }
+
+  .another__special-text{
+    padding: 0 0 0 0.6rem;
+  }
+
+  .experience__section{
+    padding-block: 60px 80px;
+  }
+
+  .experience-card{
+    max-width: none;
+    min-height: 0;
+    padding: 24px 20px;
+    justify-content: stretch;
+  }
+
+  .experience-card__title{
+    font-size: 20px;
+  }
+
+  .experience-card__paragraph{
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 1.35;
+  }
 }
 
 

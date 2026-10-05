@@ -1,0 +1,237 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #000000;
+  font-family: 'WorkSans';
+}
+
+.headerBlock {
+  text-align: center;
+}
+
+.header {
+  font-family: 'WorkSans-bold';
+  color: var(--main-title-color);
+  padding-bottom: 0.4rem;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #00000099;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.label {
+  font-family: 'WorkSans-bold';
+  font-size: 14px;
+  color: var(--main-title-color);
+}
+
+.optional {
+  font-family: 'WorkSans';
+  color: #00000081;
+}
+
+.input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  background-color: var(--menu-item-color);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: #000000;
+  font-family: 'WorkSans';
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input::placeholder {
+  color: #00000066;
+}
+
+.input:hover {
+  border-color: #25393555;
+}
+
+.input:focus-visible {
+  border-color: var(--main-title-color);
+  box-shadow: 0 0 0 3px #1b302244;
+}
+
+.inputInvalid,
+.inputInvalid:hover {
+  border-color: #a8412f;
+}
+
+.inputInvalid:focus-visible {
+  border-color: #a8412f;
+  box-shadow: 0 0 0 3px #a8412f33;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 200px;
+}
+
+.error {
+  font-size: 13px;
+  color: #a8412f;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  background-color: var(--menu-item-color);
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.summaryPrice {
+  font-family: 'WorkSans-bold';
+  color: var(--main-title-color);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.backButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #000000;
+  font-family: 'WorkSans';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  color: #00000081;
+}
+
+.submitButton {
+  background-color: var(--main-title-color);
+  border: 1px solid var(--main-title-color);
+  border-radius: 20px;
+  padding: 0.6rem 1.4rem;
+  color: var(--text-color);
+  font-family: 'WorkSans-bold';
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: var(--bg-color);
+}
+
+.submitButton:active {
+  background-color: var(--bg-footer-color);
+}
+
+.submitButton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.backButton:focus-visible,
+.submitButton:focus-visible {
+  outline: 2px solid var(--main-title-color);
+  outline-offset: 3px;
+}
+
+/* Окно успешного заказа */
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding-block: 1rem;
+  text-align: center;
+  color: #000000;
+  font-family: 'WorkSans';
+}
+
+.checkmark {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 0.4rem;
+}
+
+.checkmarkCircle {
+  fill: #1b30221a;
+  stroke: var(--main-title-color);
+  stroke-width: 2;
+  stroke-dasharray: 151;
+  stroke-dashoffset: 151;
+  animation: draw 0.5s ease-out forwards;
+}
+
+.checkmarkTick {
+  fill: none;
+  stroke: var(--main-title-color);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+  animation: draw 0.3s ease-out 0.45s forwards;
+}
+
+.successText {
+  max-width: 360px;
+  color: #000000b3;
+  line-height: 1.4;
+}
+
+.success .submitButton {
+  margin-top: 0.6rem;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .checkmarkCircle,
+  .checkmarkTick {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column-reverse;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}

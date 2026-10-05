@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 
 
-type ModalType = "cart" | "product" | "order" | null;
+type ModalType = "cart" | "product" | "order" | "success" | null;
 
 interface ModalContextI {
   modalType: ModalType;

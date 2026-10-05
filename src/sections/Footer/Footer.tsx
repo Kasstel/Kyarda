@@ -76,7 +76,7 @@ export default function Footer() {
           <div
             style={{
               height: "100px",
-              width: "400px",
+              width: "min(400px, calc(100vw - 2 * var(--padding-inline)))",
               position: "relative",
               overflow: "hidden",
             }}

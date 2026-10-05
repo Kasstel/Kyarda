@@ -17,3 +17,11 @@
   --type-colot-block__text: #dab189;
 }
 
+/* На телефонах сужаем боковые поля и не даём основному тексту быть мельче 16px */
+@media (width<=600px) {
+  :root{
+    --padding-inline: 20px;
+    --font-size: 16px;
+  }
+}
+

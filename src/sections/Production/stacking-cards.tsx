@@ -12,6 +12,10 @@ export default function StackingCards() {
       items: HTMLElement[];
     }
 
+    // На телефонах карточки выше, поэтому шаг стопки меньше —
+    // иначе нижние карточки выезжают за секцию и наезжают на «Товары»
+    const stackStep = () => (window.matchMedia("(width<=600px)").matches ? 4 : 10);
+
     function initScroll({ section, items }: initScrollProps) {
       items.forEach((element, index) => {
         if (index !== 0) {
@@ -34,7 +38,7 @@ export default function StackingCards() {
       items.forEach((item, index) => {
         timeline.to(item, {
           scale: 0.9, // постепенно уменьшаем
-          yPercent: index * 10, // сдвигаем вниз, формируя стопку
+          yPercent: () => index * stackStep(), // сдвигаем вниз, формируя стопку
           borderRadius: "10px",
         });
 

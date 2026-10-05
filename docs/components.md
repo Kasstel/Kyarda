@@ -1,6 +1,6 @@
 # Component Documentation
 
-*Generated on 2026-05-02T18:23:17.090Z*
+*Generated on 2026-10-05T12:20:39.893Z*
 
 ---
 
@@ -12,8 +12,8 @@
 
 ### Hooks Used
 
-- `useState` (line 26)
-- `useEffect` (line 28)
+- `useState` (line 28)
+- `useEffect` (line 30)
 
 
 ---
@@ -73,8 +73,8 @@
 
 ### Hooks Used
 
-- `useModal` (line 9)
-- `useCart` (line 10)
+- `useModal` (line 8)
+- `useCart` (line 9)
 
 
 ---
@@ -192,6 +192,44 @@
 
 ---
 
+## fieldProps
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Order/Order.tsx`
+
+**Export:** Named
+
+### Props
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| toString | `() => string` | ✅ | - | Returns a string representation of a string. |
+| charAt | `(pos: number) => string` | ✅ | - | Returns the character at the specified index. |
+| charCodeAt | `(index: number) => number` | ✅ | - | Returns the Unicode value of the character at the specified location. |
+| concat | `(...strings: string[]) => string` | ✅ | - | Returns a string that contains the concatenation of two or more strings. |
+| indexOf | `(searchString: string, position?: number) => number` | ✅ | - | Returns the position of the first occurrence of a substring. |
+| lastIndexOf | `(searchString: string, position?: number) => number` | ✅ | - | Returns the last occurrence of a substring in the string. |
+| localeCompare | `{ (that: string): number; (that: string, locales?: string | string[], options?: CollatorOptions): number; }` | ✅ | - | Determines whether two strings are equivalent in the current locale.
+
+
+Determines whether two strings are equivalent in the current or specified locale. |
+| match | `(regexp: string | RegExp) => RegExpMatchArray` | ✅ | - | Matches a string with a regular expression, and returns an array containing the results of that search. |
+| replace | `{ (searchValue: string | RegExp, replaceValue: string): string; (searchValue: string | RegExp, replacer: (substring: string, ...args: any[]) => string): string; }` | ✅ | - | Replaces text in a string, using a regular expression or search string. |
+| search | `(regexp: string | RegExp) => number` | ✅ | - | Finds the first substring match in a regular expression search. |
+| slice | `(start?: number, end?: number) => string` | ✅ | - | Returns a section of a string. |
+| split | `(separator: string | RegExp, limit?: number) => string[]` | ✅ | - | Split a string into substrings using the specified separator and return them as an array. |
+| substring | `(start: number, end?: number) => string` | ✅ | - | Returns the substring at the specified location within a String object. |
+| toLowerCase | `() => string` | ✅ | - | Converts all the alphabetic characters in a string to lowercase. |
+| toLocaleLowerCase | `(locales?: string | string[]) => string` | ✅ | - | Converts all alphabetic characters to lowercase, taking into account the host environment's current locale. |
+| toUpperCase | `() => string` | ✅ | - | Converts all the alphabetic characters in a string to uppercase. |
+| toLocaleUpperCase | `(locales?: string | string[]) => string` | ✅ | - | Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale. |
+| trim | `() => string` | ✅ | - | Removes the leading and trailing white space and line terminator characters from a string. |
+| length | `number` | ✅ | - | Returns the length of a String object. |
+| substr | `(from: number, length?: number) => string` | ✅ | - | Gets a substring beginning at the specified location and having the specified length. |
+| valueOf | `() => string` | ✅ | - | Returns the primitive value of the specified object. |
+
+
+---
+
 ## Footer
 
 **File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx`
@@ -233,6 +271,9 @@
 
 - `useEffect` (line 10)
 - `useCart` (line 15)
+- `useState` (line 18)
+- `useRef` (line 19)
+- `useEffect` (line 21)
 
 
 ---
@@ -254,8 +295,8 @@
 
 ### Hooks Used
 
-- `useModal` (line 9)
-- `useEffect` (line 11)
+- `useModal` (line 10)
+- `useEffect` (line 12)
 
 
 ---
@@ -285,6 +326,28 @@
 **File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Order/Order.tsx`
 
 **Export:** Named
+
+### Hooks Used
+
+- `useCart` (line 64)
+- `useModal` (line 65)
+- `useState` (line 67)
+- `useState` (line 68)
+- `useState` (line 69)
+- `useState` (line 70)
+
+
+---
+
+## OrderSuccess
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Order/OrderSuccess.tsx`
+
+**Export:** Named
+
+### Hooks Used
+
+- `useModal` (line 5)
 
 
 ---
@@ -323,24 +386,9 @@
 
 **Export:** Named
 
-### Props
-
-| Name | Type | Required | Default | Description |
-|------|------|----------|---------|-------------|
-| name | `string` | ✅ | - | - |
-| image | `string` | ✅ | - | - |
-| salePrice | `number` | ❌ | - | - |
-| firstPrice | `number` | ✅ | - | - |
-| typeBoard | `typeBoard` | ✅ | - | - |
-| thickness | `string` | ✅ | - | - |
-| width | `string` | ✅ | - | - |
-| description | `string` | ✅ | - | - |
-| priceDescription | `string` | ❌ | - | - |
-| length | `string` | ❌ | - | - |
-
 ### Hooks Used
 
-- `useModal` (line 8)
+- `useModal` (line 10)
 
 
 ---
@@ -350,6 +398,44 @@
 **File:** `C:/Users/kasstel/dev/Kyarda/src/sections/Products/Products.tsx`
 
 **Export:** Default
+
+
+---
+
+## renderError
+
+**File:** `C:/Users/kasstel/dev/Kyarda/src/widgets/Order/Order.tsx`
+
+**Export:** Named
+
+### Props
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| toString | `() => string` | ✅ | - | Returns a string representation of a string. |
+| charAt | `(pos: number) => string` | ✅ | - | Returns the character at the specified index. |
+| charCodeAt | `(index: number) => number` | ✅ | - | Returns the Unicode value of the character at the specified location. |
+| concat | `(...strings: string[]) => string` | ✅ | - | Returns a string that contains the concatenation of two or more strings. |
+| indexOf | `(searchString: string, position?: number) => number` | ✅ | - | Returns the position of the first occurrence of a substring. |
+| lastIndexOf | `(searchString: string, position?: number) => number` | ✅ | - | Returns the last occurrence of a substring in the string. |
+| localeCompare | `{ (that: string): number; (that: string, locales?: string | string[], options?: CollatorOptions): number; }` | ✅ | - | Determines whether two strings are equivalent in the current locale.
+
+
+Determines whether two strings are equivalent in the current or specified locale. |
+| match | `(regexp: string | RegExp) => RegExpMatchArray` | ✅ | - | Matches a string with a regular expression, and returns an array containing the results of that search. |
+| replace | `{ (searchValue: string | RegExp, replaceValue: string): string; (searchValue: string | RegExp, replacer: (substring: string, ...args: any[]) => string): string; }` | ✅ | - | Replaces text in a string, using a regular expression or search string. |
+| search | `(regexp: string | RegExp) => number` | ✅ | - | Finds the first substring match in a regular expression search. |
+| slice | `(start?: number, end?: number) => string` | ✅ | - | Returns a section of a string. |
+| split | `(separator: string | RegExp, limit?: number) => string[]` | ✅ | - | Split a string into substrings using the specified separator and return them as an array. |
+| substring | `(start: number, end?: number) => string` | ✅ | - | Returns the substring at the specified location within a String object. |
+| toLowerCase | `() => string` | ✅ | - | Converts all the alphabetic characters in a string to lowercase. |
+| toLocaleLowerCase | `(locales?: string | string[]) => string` | ✅ | - | Converts all alphabetic characters to lowercase, taking into account the host environment's current locale. |
+| toUpperCase | `() => string` | ✅ | - | Converts all the alphabetic characters in a string to uppercase. |
+| toLocaleUpperCase | `(locales?: string | string[]) => string` | ✅ | - | Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale. |
+| trim | `() => string` | ✅ | - | Removes the leading and trailing white space and line terminator characters from a string. |
+| length | `number` | ✅ | - | Returns the length of a String object. |
+| substr | `(from: number, length?: number) => string` | ✅ | - | Gets a substring beginning at the specified location and having the specified length. |
+| valueOf | `() => string` | ✅ | - | Returns the primitive value of the specified object. |
 
 
 ---

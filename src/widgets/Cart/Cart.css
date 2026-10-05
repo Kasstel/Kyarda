@@ -165,6 +165,44 @@ svg:hover{
   justify-content: center;
 }
 
+@media (width<=600px) {
+  .product{
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .product-image{
+    max-width: 84px;
+    min-height: 110px;
+  }
+
+  .product-information{
+    flex: 1;
+    min-width: 0;
+    gap: 0.3rem;
+  }
+
+  .product-header-block{
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .product-typeBlock__text{
+    font-size: 14px;
+  }
+
+  .quantity-button,
+  .trash-button{
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 18px;
+  }
+
+  .form_button{
+    padding: 0.7rem 1.2rem;
+  }
+}
+
 .text-cart {
   position: absolute;
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T18:23:17.092Z",
+  "generatedAt": "2026-10-05T12:20:39.895Z",
   "components": [
     {
       "name": "App",
@@ -32,11 +32,11 @@
       "hooks": [
         {
           "name": "useState",
-          "line": 26
+          "line": 28
         },
         {
           "name": "useEffect",
-          "line": 28
+          "line": 30
         }
       ],
       "isExported": false,
@@ -185,17 +185,16 @@
         "./Context/Context",
         "./Cart.css",
         "./Cart.types",
-        "../ModalContext/ModalContext",
-        "react"
+        "../ModalContext/ModalContext"
       ],
       "hooks": [
         {
           "name": "useModal",
-          "line": 9
+          "line": 8
         },
         {
           "name": "useCart",
-          "line": 10
+          "line": 9
         }
       ],
       "isExported": true,
@@ -479,6 +478,150 @@
       "exportType": "default"
     },
     {
+      "name": "fieldProps",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Order/Order.tsx",
+      "props": [
+        {
+          "name": "toString",
+          "type": "() => string",
+          "required": true,
+          "description": "Returns a string representation of a string."
+        },
+        {
+          "name": "charAt",
+          "type": "(pos: number) => string",
+          "required": true,
+          "description": "Returns the character at the specified index."
+        },
+        {
+          "name": "charCodeAt",
+          "type": "(index: number) => number",
+          "required": true,
+          "description": "Returns the Unicode value of the character at the specified location."
+        },
+        {
+          "name": "concat",
+          "type": "(...strings: string[]) => string",
+          "required": true,
+          "description": "Returns a string that contains the concatenation of two or more strings."
+        },
+        {
+          "name": "indexOf",
+          "type": "(searchString: string, position?: number) => number",
+          "required": true,
+          "description": "Returns the position of the first occurrence of a substring."
+        },
+        {
+          "name": "lastIndexOf",
+          "type": "(searchString: string, position?: number) => number",
+          "required": true,
+          "description": "Returns the last occurrence of a substring in the string."
+        },
+        {
+          "name": "localeCompare",
+          "type": "{ (that: string): number; (that: string, locales?: string | string[], options?: CollatorOptions): number; }",
+          "required": true,
+          "description": "Determines whether two strings are equivalent in the current locale.\n\n\nDetermines whether two strings are equivalent in the current or specified locale."
+        },
+        {
+          "name": "match",
+          "type": "(regexp: string | RegExp) => RegExpMatchArray",
+          "required": true,
+          "description": "Matches a string with a regular expression, and returns an array containing the results of that search."
+        },
+        {
+          "name": "replace",
+          "type": "{ (searchValue: string | RegExp, replaceValue: string): string; (searchValue: string | RegExp, replacer: (substring: string, ...args: any[]) => string): string; }",
+          "required": true,
+          "description": "Replaces text in a string, using a regular expression or search string."
+        },
+        {
+          "name": "search",
+          "type": "(regexp: string | RegExp) => number",
+          "required": true,
+          "description": "Finds the first substring match in a regular expression search."
+        },
+        {
+          "name": "slice",
+          "type": "(start?: number, end?: number) => string",
+          "required": true,
+          "description": "Returns a section of a string."
+        },
+        {
+          "name": "split",
+          "type": "(separator: string | RegExp, limit?: number) => string[]",
+          "required": true,
+          "description": "Split a string into substrings using the specified separator and return them as an array."
+        },
+        {
+          "name": "substring",
+          "type": "(start: number, end?: number) => string",
+          "required": true,
+          "description": "Returns the substring at the specified location within a String object."
+        },
+        {
+          "name": "toLowerCase",
+          "type": "() => string",
+          "required": true,
+          "description": "Converts all the alphabetic characters in a string to lowercase."
+        },
+        {
+          "name": "toLocaleLowerCase",
+          "type": "(locales?: string | string[]) => string",
+          "required": true,
+          "description": "Converts all alphabetic characters to lowercase, taking into account the host environment's current locale."
+        },
+        {
+          "name": "toUpperCase",
+          "type": "() => string",
+          "required": true,
+          "description": "Converts all the alphabetic characters in a string to uppercase."
+        },
+        {
+          "name": "toLocaleUpperCase",
+          "type": "(locales?: string | string[]) => string",
+          "required": true,
+          "description": "Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale."
+        },
+        {
+          "name": "trim",
+          "type": "() => string",
+          "required": true,
+          "description": "Removes the leading and trailing white space and line terminator characters from a string."
+        },
+        {
+          "name": "length",
+          "type": "number",
+          "required": true,
+          "description": "Returns the length of a String object."
+        },
+        {
+          "name": "substr",
+          "type": "(from: number, length?: number) => string",
+          "required": true,
+          "description": "Gets a substring beginning at the specified location and having the specified length."
+        },
+        {
+          "name": "valueOf",
+          "type": "() => string",
+          "required": true,
+          "description": "Returns the primitive value of the specified object."
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "../Cart/Cart.types",
+        "../Cart/Context/Context",
+        "../ModalContext/ModalContext",
+        "./Order.module.css"
+      ],
+      "hooks": [],
+      "isExported": false,
+      "exportType": "named"
+    },
+    {
       "name": "Footer",
       "description": "",
       "filePath": "C:/Users/kasstel/dev/Kyarda/src/sections/Footer/Footer.tsx",
@@ -550,6 +693,18 @@
         {
           "name": "useCart",
           "line": 15
+        },
+        {
+          "name": "useState",
+          "line": 18
+        },
+        {
+          "name": "useRef",
+          "line": 19
+        },
+        {
+          "name": "useEffect",
+          "line": 21
         }
       ],
       "isExported": true,
@@ -580,16 +735,17 @@
         "../ProductCard/ProductCard",
         "./Modal.css",
         "../Cart/Cart",
-        "../Order/Order"
+        "../Order/Order",
+        "../Order/OrderSuccess"
       ],
       "hooks": [
         {
           "name": "useModal",
-          "line": 9
+          "line": 10
         },
         {
           "name": "useEffect",
-          "line": 11
+          "line": 12
         }
       ],
       "isExported": true,
@@ -630,8 +786,58 @@
       "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Order/Order.tsx",
       "props": [],
       "examples": [],
-      "dependencies": [],
-      "hooks": [],
+      "dependencies": [
+        "react",
+        "../Cart/Cart.types",
+        "../Cart/Context/Context",
+        "../ModalContext/ModalContext",
+        "./Order.module.css"
+      ],
+      "hooks": [
+        {
+          "name": "useCart",
+          "line": 64
+        },
+        {
+          "name": "useModal",
+          "line": 65
+        },
+        {
+          "name": "useState",
+          "line": 67
+        },
+        {
+          "name": "useState",
+          "line": 68
+        },
+        {
+          "name": "useState",
+          "line": 69
+        },
+        {
+          "name": "useState",
+          "line": 70
+        }
+      ],
+      "isExported": true,
+      "exportType": "named"
+    },
+    {
+      "name": "OrderSuccess",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Order/OrderSuccess.tsx",
+      "props": [],
+      "examples": [],
+      "dependencies": [
+        "../ModalContext/ModalContext",
+        "./Order.module.css"
+      ],
+      "hooks": [
+        {
+          "name": "useModal",
+          "line": 5
+        }
+      ],
       "isExported": true,
       "exportType": "named"
     },
@@ -719,68 +925,7 @@
       "name": "ProductCardPreview",
       "description": "",
       "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/ProductCard/ProductCardPreview.tsx",
-      "props": [
-        {
-          "name": "name",
-          "type": "string",
-          "required": true,
-          "description": ""
-        },
-        {
-          "name": "image",
-          "type": "string",
-          "required": true,
-          "description": ""
-        },
-        {
-          "name": "salePrice",
-          "type": "number",
-          "required": false,
-          "description": ""
-        },
-        {
-          "name": "firstPrice",
-          "type": "number",
-          "required": true,
-          "description": ""
-        },
-        {
-          "name": "typeBoard",
-          "type": "typeBoard",
-          "required": true,
-          "description": ""
-        },
-        {
-          "name": "thickness",
-          "type": "string",
-          "required": true,
-          "description": ""
-        },
-        {
-          "name": "width",
-          "type": "string",
-          "required": true,
-          "description": ""
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "required": true,
-          "description": ""
-        },
-        {
-          "name": "priceDescription",
-          "type": "string",
-          "required": false,
-          "description": ""
-        },
-        {
-          "name": "length",
-          "type": "string",
-          "required": false,
-          "description": ""
-        }
-      ],
+      "props": [],
       "examples": [],
       "dependencies": [
         "../ModalContext/ModalContext",
@@ -791,7 +936,7 @@
       "hooks": [
         {
           "name": "useModal",
-          "line": 8
+          "line": 10
         }
       ],
       "isExported": true,
@@ -812,6 +957,150 @@
       "hooks": [],
       "isExported": true,
       "exportType": "default"
+    },
+    {
+      "name": "renderError",
+      "description": "",
+      "filePath": "C:/Users/kasstel/dev/Kyarda/src/widgets/Order/Order.tsx",
+      "props": [
+        {
+          "name": "toString",
+          "type": "() => string",
+          "required": true,
+          "description": "Returns a string representation of a string."
+        },
+        {
+          "name": "charAt",
+          "type": "(pos: number) => string",
+          "required": true,
+          "description": "Returns the character at the specified index."
+        },
+        {
+          "name": "charCodeAt",
+          "type": "(index: number) => number",
+          "required": true,
+          "description": "Returns the Unicode value of the character at the specified location."
+        },
+        {
+          "name": "concat",
+          "type": "(...strings: string[]) => string",
+          "required": true,
+          "description": "Returns a string that contains the concatenation of two or more strings."
+        },
+        {
+          "name": "indexOf",
+          "type": "(searchString: string, position?: number) => number",
+          "required": true,
+          "description": "Returns the position of the first occurrence of a substring."
+        },
+        {
+          "name": "lastIndexOf",
+          "type": "(searchString: string, position?: number) => number",
+          "required": true,
+          "description": "Returns the last occurrence of a substring in the string."
+        },
+        {
+          "name": "localeCompare",
+          "type": "{ (that: string): number; (that: string, locales?: string | string[], options?: CollatorOptions): number; }",
+          "required": true,
+          "description": "Determines whether two strings are equivalent in the current locale.\n\n\nDetermines whether two strings are equivalent in the current or specified locale."
+        },
+        {
+          "name": "match",
+          "type": "(regexp: string | RegExp) => RegExpMatchArray",
+          "required": true,
+          "description": "Matches a string with a regular expression, and returns an array containing the results of that search."
+        },
+        {
+          "name": "replace",
+          "type": "{ (searchValue: string | RegExp, replaceValue: string): string; (searchValue: string | RegExp, replacer: (substring: string, ...args: any[]) => string): string; }",
+          "required": true,
+          "description": "Replaces text in a string, using a regular expression or search string."
+        },
+        {
+          "name": "search",
+          "type": "(regexp: string | RegExp) => number",
+          "required": true,
+          "description": "Finds the first substring match in a regular expression search."
+        },
+        {
+          "name": "slice",
+          "type": "(start?: number, end?: number) => string",
+          "required": true,
+          "description": "Returns a section of a string."
+        },
+        {
+          "name": "split",
+          "type": "(separator: string | RegExp, limit?: number) => string[]",
+          "required": true,
+          "description": "Split a string into substrings using the specified separator and return them as an array."
+        },
+        {
+          "name": "substring",
+          "type": "(start: number, end?: number) => string",
+          "required": true,
+          "description": "Returns the substring at the specified location within a String object."
+        },
+        {
+          "name": "toLowerCase",
+          "type": "() => string",
+          "required": true,
+          "description": "Converts all the alphabetic characters in a string to lowercase."
+        },
+        {
+          "name": "toLocaleLowerCase",
+          "type": "(locales?: string | string[]) => string",
+          "required": true,
+          "description": "Converts all alphabetic characters to lowercase, taking into account the host environment's current locale."
+        },
+        {
+          "name": "toUpperCase",
+          "type": "() => string",
+          "required": true,
+          "description": "Converts all the alphabetic characters in a string to uppercase."
+        },
+        {
+          "name": "toLocaleUpperCase",
+          "type": "(locales?: string | string[]) => string",
+          "required": true,
+          "description": "Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale."
+        },
+        {
+          "name": "trim",
+          "type": "() => string",
+          "required": true,
+          "description": "Removes the leading and trailing white space and line terminator characters from a string."
+        },
+        {
+          "name": "length",
+          "type": "number",
+          "required": true,
+          "description": "Returns the length of a String object."
+        },
+        {
+          "name": "substr",
+          "type": "(from: number, length?: number) => string",
+          "required": true,
+          "description": "Gets a substring beginning at the specified location and having the specified length."
+        },
+        {
+          "name": "valueOf",
+          "type": "() => string",
+          "required": true,
+          "description": "Returns the primitive value of the specified object."
+        }
+      ],
+      "examples": [],
+      "dependencies": [
+        "react",
+        "../Cart/Cart.types",
+        "../Cart/Context/Context",
+        "../ModalContext/ModalContext",
+        "./Order.module.css"
+      ],
+      "hooks": [],
+      "isExported": false,
+      "exportType": "named"
     },
     {
       "name": "ShinyText",

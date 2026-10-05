@@ -2,7 +2,6 @@ import { useCart } from "./Context/Context"
 import './Cart.css'
 import type { ICartItem } from "./Cart.types";
 import { useModal } from "../ModalContext/ModalContext";
-import { useState } from "react";
 
 
 export function Cart(){
@@ -86,7 +85,7 @@ export function Cart(){
         </article>
       )})}
       <div className="form-block">
-        <button className="form_button" onClick={()=>{openModal('order')}}>Оформить заказз</button>
+        <button className="form_button" onClick={()=>{openModal('order')}}>Оформить заказ</button>
       </div>
     </div>
     </>

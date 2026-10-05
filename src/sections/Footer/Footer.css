@@ -81,5 +81,17 @@
   .footer{
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
+  }
+}
+
+@media (width<=600px) {
+  .footer__help-photo{
+    width: 100%;
+    max-width: 270px;
+  }
+
+  .footer__help-paragraph{
+    text-align: center;
   }
 }

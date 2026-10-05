@@ -44,3 +44,18 @@
     align-items: center;
   }
 }
+
+@media (width<=600px) {
+  .geo{
+    padding-block: 0 80px;
+  }
+
+  .geo__map{
+    width: 100%;
+  }
+
+  .geo_text{
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}

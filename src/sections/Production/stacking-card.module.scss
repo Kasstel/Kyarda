@@ -112,8 +112,56 @@
             background-color: rgba(255, 255, 255, 0.8);
             width:clamp(90%, 70vw, 60%);
       }
+          &__text{
+            font-size: 15px;
+      }
     }
     }
   }
 }
+}
+
+/* Телефоны: карточка выше, текст крупнее и на более плотной подложке */
+@media (width<=600px) {
+  .scroll-section {
+    padding-block-start: 90px;
+    // страховка: стопка карточек не должна выходить за секцию
+    overflow: hidden;
+    .wrapper-cards {
+      .card-list {
+        .card {
+          height: 78%;
+          height: min(78%, calc(100svh - 110px));
+          &__media{
+            object-fit: cover;
+          }
+          &__content{
+            width: 100%;
+            padding: 1rem 1.1rem;
+            align-content: start;
+            background-color: rgba(255, 255, 255, 0.88);
+          }
+          &__number{
+            font-size: 1.25rem;
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-bottom: 0;
+          }
+          &__title{
+            align-self: center;
+            font-size: 1.25rem;
+          }
+          &__text{
+            font-size: 15px;
+            font-size: clamp(13.5px, 2.2svh, 16px);
+            line-height: 1.3;
+            margin-bottom: 10px;
+            .additional{
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
