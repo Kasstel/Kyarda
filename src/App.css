@@ -261,6 +261,14 @@ html {
     width: 52px;
     z-index: 21;
   }
+
+  /* при переходе по пунктам меню заголовок секции не прячется под верхней панелью */
+  #about,
+  #products,
+  #production,
+  #contacts{
+    scroll-margin-top: 64px;
+  }
 }
 
 .layers{

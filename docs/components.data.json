@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:20:39.895Z",
+  "generatedAt": "2026-10-05T19:55:40.303Z",
   "components": [
     {
       "name": "App",
@@ -190,11 +190,11 @@
       "hooks": [
         {
           "name": "useModal",
-          "line": 8
+          "line": 19
         },
         {
           "name": "useCart",
-          "line": 9
+          "line": 20
         }
       ],
       "isExported": true,
@@ -681,6 +681,7 @@
         "/images/logo.webp",
         "gsap",
         "gsap/all",
+        "gsap/ScrollTrigger",
         "../../App.css",
         "../../widgets/Cart/CartPreview",
         "../../widgets/Cart/Context/Context"
@@ -688,23 +689,31 @@
       "hooks": [
         {
           "name": "useEffect",
-          "line": 10
+          "line": 16
         },
         {
           "name": "useCart",
-          "line": 15
+          "line": 21
         },
         {
           "name": "useState",
-          "line": 18
+          "line": 24
         },
         {
           "name": "useRef",
-          "line": 19
+          "line": 25
         },
         {
           "name": "useEffect",
-          "line": 21
+          "line": 27
+        },
+        {
+          "name": "useState",
+          "line": 48
+        },
+        {
+          "name": "useEffect",
+          "line": 50
         }
       ],
       "isExported": true,
@@ -909,13 +918,27 @@
       ],
       "examples": [],
       "dependencies": [
+        "react",
         "../Cart/Context/Context",
+        "../ModalContext/ModalContext",
         "./ProductCard.css"
       ],
       "hooks": [
         {
           "name": "useCart",
-          "line": 34
+          "line": 38
+        },
+        {
+          "name": "useModal",
+          "line": 39
+        },
+        {
+          "name": "useState",
+          "line": 40
+        },
+        {
+          "name": "useEffect",
+          "line": 57
         }
       ],
       "isExported": true,

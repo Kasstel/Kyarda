@@ -27,8 +27,8 @@ export function Modal(){
    if (!modalType) return null; // <=== ГЛАВНОЕ УСЛОВИЕ
 
   return(
-    <div className="modal-overlay" data-lenis-prevent onClick={closeModal}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-overlay" onClick={closeModal}>
+      <div className={`modal-content ${modalType === "product" ? "modal-content--product" : ""}`} onClick={(e) => e.stopPropagation()}>
         {modalType === "product" && <ProductCard {...modalData} />}
         {modalType === "cart" && <Cart/>}
         {modalType === "order" && <OrderForm/>}

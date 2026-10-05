@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../../App.css";
 import { CartPreview } from "../../widgets/Cart/CartPreview";
 import { useCart } from "../../widgets/Cart/Context/Context";
-import { getLenis } from "../../js-functions/smoothScroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,13 +65,8 @@ export default function Menu() {
     const targetId = event.currentTarget.getAttribute("href")?.replace("#", "");
     const targetSection = document.getElementById(targetId || "");
 
-    const lenis = getLenis();
     const smoother = ScrollSmoother.get();
-    if (lenis && targetSection) {
-      // плавный скролл через Lenis; на мобильных учитываем высоту верхней панели
-      const offset = window.matchMedia("(width<=768px)").matches ? -64 : 0;
-      lenis.scrollTo(targetSection, { offset });
-    } else if (smoother && targetSection) {
+    if (smoother && targetSection) {
       // плавный скролл через smoother
       smoother.scrollTo(targetSection, true);
     } else if (targetSection) {

@@ -1,6 +1,6 @@
 # Component Documentation
 
-*Generated on 2026-10-05T12:20:39.893Z*
+*Generated on 2026-10-05T19:55:40.301Z*
 
 ---
 
@@ -73,8 +73,8 @@
 
 ### Hooks Used
 
-- `useModal` (line 8)
-- `useCart` (line 9)
+- `useModal` (line 19)
+- `useCart` (line 20)
 
 
 ---
@@ -269,11 +269,13 @@ Determines whether two strings are equivalent in the current or specified locale
 
 ### Hooks Used
 
-- `useEffect` (line 10)
-- `useCart` (line 15)
-- `useState` (line 18)
-- `useRef` (line 19)
-- `useEffect` (line 21)
+- `useEffect` (line 16)
+- `useCart` (line 21)
+- `useState` (line 24)
+- `useRef` (line 25)
+- `useEffect` (line 27)
+- `useState` (line 48)
+- `useEffect` (line 50)
 
 
 ---
@@ -375,7 +377,10 @@ Determines whether two strings are equivalent in the current or specified locale
 
 ### Hooks Used
 
-- `useCart` (line 34)
+- `useCart` (line 38)
+- `useModal` (line 39)
+- `useState` (line 40)
+- `useEffect` (line 57)
 
 
 ---

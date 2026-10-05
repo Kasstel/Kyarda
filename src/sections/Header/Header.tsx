@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import logo from "/images/logo.png";
-import { getLenis } from "../../js-functions/smoothScroll";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Header() {
@@ -69,12 +68,7 @@ export default function Header() {
     const target = document.getElementById("about");
     if (!target) return;
 
-    const lenis = getLenis();
-    if (lenis) {
-      lenis.scrollTo(target);
-    } else {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+    target.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
