@@ -2,6 +2,7 @@ import './App.css'
 import './assets/fonts/fonts.css'
 import './variables.css'
 import { initParallax } from './js-functions/parallax.ts'
+import { initSmoothScroll } from './js-functions/smoothScroll.ts'
 import { useEffect, useState } from 'react';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,6 +32,7 @@ function App() {
 
     // Инициализируем параллакс после того как все дети смонтировались
     const cleanup = initParallax();
+    const cleanupSmoothScroll = initSmoothScroll();
 
     // Единый refresh после полной отрисовки
     // requestAnimationFrame гарантирует, что браузер завершил layout
@@ -47,6 +49,7 @@ function App() {
 
     return () => {
       cleanup();
+      cleanupSmoothScroll();
       cancelAnimationFrame(rafId);
       window.removeEventListener("load", onLoad);
     };

@@ -4,7 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function initParallax() {
-  const layers = gsap.utils.toArray<HTMLElement>(".layer");
+  // Только слои с явным data-speed: слои шапки анимирует сам Header,
+  // иначе на одном элементе оказывалось две анимации
+  const layers = gsap.utils.toArray<HTMLElement>(".layer[data-speed]");
 
   layers.forEach((layer) => {
     const speed = parseFloat(layer.dataset.speed || "1");

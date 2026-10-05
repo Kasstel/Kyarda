@@ -98,6 +98,33 @@ html {
   display: none;
 }
 
+/* Тема меню над светлой шапкой: тёмный текст и тёмный логотип.
+   Только для десктопа — на мобильных панель и так тёмная */
+.menu,
+.menu__logo{
+  transition: background-color 0.3s ease, border-color 0.3s ease, filter 0.3s ease;
+}
+
+@media (width>768px) {
+  .menu--on-hero{
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .menu--on-hero .text-link{
+    color: var(--main-title-color);
+    text-shadow: none;
+  }
+
+  .menu--on-hero .text-link:hover{
+    color: #000000;
+    text-shadow: none;
+  }
+
+  .menu__logo--on-hero{
+    filter: brightness(0.2);
+  }
+}
+
 .text-link{
   text-decoration: none;
   transition: color 0.3s ease;
@@ -290,15 +317,111 @@ html {
   height: 100vh;
   margin-top: 50px;
   z-index: 2;
-  transform: translate3d(0, calc(var(--scrollTop, 0px) * 0.4), 0);
+  /* Верхушки леса растворяются в тумане — надпись уходит в дымку, а не срезается */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 22%, #000 58%);
+  mask-image: linear-gradient(to bottom, transparent 22%, #000 58%);
+}
+
+.hero-section__title{
+  /* во сколько раз надпись вытянута по вертикали */
+  --title-stretch: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero-section__tagline{
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  font-family: var(--normal-f);
+  font-size: clamp(14px, 0.6rem + 0.6vw, 20px);
+  letter-spacing: 0.3em;
+  color: var(--main-title-color);
+  text-align: center;
+}
+
+.hero-section__tagline::before,
+.hero-section__tagline::after{
+  content: "";
+  flex: 0 0 clamp(30px, 6vw, 90px);
+  height: 1px;
+  background-color: currentColor;
+  opacity: 0.6;
 }
 
 .hero-section__text-block{
   align-content: center;
   font-size: clamp(5rem, 1.25rem + 18.75vw, 18.125rem);
+  line-height: 1;
   color: var(--main-title-color);
   font-family: var(--normal-f);
   z-index: 1;
+  /* Тянем от нижнего края: низ букв остаётся у кромки леса, надпись растёт вверх.
+     scaleY не меняет раскладку, поэтому место под «выросшую» часть даём отступом */
+  transform: scaleY(var(--title-stretch));
+  transform-origin: center bottom;
+  margin-top: calc((var(--title-stretch) - 1) * 0.85em);
+}
+
+.hero-section__scroll-hint{
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--normal-f);
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: var(--text-color);
+  text-decoration: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section__scroll-arrow{
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  rotate: 45deg;
+  animation: scroll-hint 1.6s ease-in-out infinite;
+}
+
+@keyframes scroll-hint {
+  0%, 100% { translate: 0 0; opacity: 1; }
+  50% { translate: 0 8px; opacity: 0.5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-section__scroll-arrow{
+    animation: none;
+  }
+}
+
+@media (width<=600px) {
+  .hero-section__title{
+    --title-stretch: 1.25;
+  }
+
+  .hero-section__tagline{
+    font-size: 14px;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-section__tagline::before,
+  .hero-section__tagline::after{
+    display: none;
+  }
+
+  /* на телефоне низ 100vh может быть под панелью браузера — поднимаем подсказку в видимую часть */
+  .hero-section__scroll-hint{
+    bottom: calc(100vh - 100svh + 1.5rem);
+  }
 }
 
 .grid-section{
